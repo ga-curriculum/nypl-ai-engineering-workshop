@@ -51,15 +51,45 @@
 
 **Goal:** Participants understand the dual-tool framework and can use both Gemini and Copilot for basic code generation tasks.
 
+**Timing breakdown:**
+| Segment | Time |
+|---|---|
+| Slides 1–5: Dual-tool framework + demo | 20 min |
+| Slides 6–8: High-context prompts + role-based prompting | 15 min |
+| Exercise 1: Build a High-Context Prompt | 10 min |
+| Exercise 2: Peer Testing Round-Robin | 10 min |
+| Exercise 3: Role-Based Prompting | 12 min |
+| Slides 9–11: Generate > Review > Refine intro | 8 min |
+| Transition to Lab 1 | 5 min |
+| Lab 1: Gemini Reasoning | 30 min |
+
 **Key talking points:**
 - Gemini excels at reasoning, explanation, and multi-step planning
 - Copilot excels at inline code completion and context-aware suggestions
 - They complement each other — not competing tools
+- The Generate > Review > Refine loop is introduced here and used all day
+
+**Demo script (Slide 5):**
+- Show the same task (email validation) given to Gemini and Copilot
+- Gemini prompt: Ask it to reason about what makes a valid email first
+- Copilot: Type a descriptive comment and let it autocomplete the function
+- Point out: Gemini gave you a plan, Copilot gave you code — use both
+
+**Exercise 3 answer key:**
+- The sample code (`load_config`, `get_users`, `calculate_average_rating`) contains:
+  - SQL injection via f-string (Security finds this)
+  - Plaintext password loading (Security finds this)
+  - `fetchall()` loading all results into memory (Performance finds this)
+  - `ZeroDivisionError` on empty reviews list (QA finds this)
+  - Missing key `KeyError` crashes (QA finds this)
+- All three roles find different issues — this drives the point home
 
 **Lab 1 notes:**
+- The starter code (`inventory_manager.py`) has 16 intentional issues across 5 categories
 - Circulate during the lab. Common sticking points: Gemini API auth, Copilot not activating in VS Code
 - Remind participants to try all three difficulty tiers (base/intermediate/stretch)
 - Time check: allow 30 min for the lab portion
+- Answer key is in `labs/lab-1-gemini-reasoning/solution/issues-found.md`
 
 ### Module 2: Working with Existing Codebases (90 min)
 
@@ -93,15 +123,34 @@
 
 **Goal:** Participants understand responsible AI use in engineering contexts.
 
+**Timing breakdown:**
+| Segment | Time |
+|---|---|
+| Slides 1–5: Disclosure spectrum + practice | 10 min |
+| Slides 6–8: IP, governance, QA framework as governance | 10 min |
+| Slide 9: Quick poll (interactive) | 3 min |
+| Transition to Lab 4 | 2 min |
+| Lab 4: Code Review Tagging | 10 min |
+
 **Key talking points:**
-- When to disclose AI-assisted code in PRs and documentation
-- License and IP considerations
-- Organization-level AI governance patterns
-- This is intentionally the lightest module — focus on discussion, not exercises
+- The disclosure spectrum: fully AI-generated > AI-assisted > AI-reviewed > human-only
+- When to disclose: "Would a reviewer's evaluation change if they knew?"
+- License and IP considerations — evolving legal landscape
+- The QA Framework is itself a governance mechanism (built-in oversight)
+- 5 essentials for an org AI policy: tools, disclosure, review, data, accountability
+
+**Interactive poll (Slide 9):**
+- Ask by show of hands: "Does your team have an AI coding policy?"
+- "Have you reviewed a PR that was AI-generated without knowing it?"
+- This usually sparks good discussion — let it run if energy is there
 
 **Lab 4 notes:**
-- Code review tagging exercise: participants label AI-generated vs human-written code
-- Use this as a segue into the capstone
+- 5 code samples in `labs/lab-4-code-review-tagging/starter/code_samples.py`
+- Answer key: Samples A, C, E are AI-generated; B is human-written; D is AI-assisted
+- The signals: AI code has uniform docstrings, perfect type hints, verbose patterns
+- Human code has TODOs with names, informal comments, inconsistent style
+- After labeling, participants apply Security Auditor persona to the AI samples
+- Use this as a segue into the capstone — "Now use everything you've learned"
 
 ## Contingency Plans
 
