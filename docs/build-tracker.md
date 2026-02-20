@@ -74,6 +74,6 @@ Track what's done, in progress, and who owns what. Update this as you work.
 
 | Blocker | Impact | Owner | Target Resolution |
 |---|---|---|---|
-| Confirm Gemini access for 25 participants per cohort | All Gemini exercises | — | This week |
-| Confirm Copilot licenses for 25 participants per cohort | All Copilot exercises | — | This week |
+| ~~Confirm Gemini access for 25 participants per cohort~~ | All Gemini exercises | NYPL (Mike) | Confirmed — licenses by 3/1 |
+| ~~Confirm Copilot licenses for 25 participants per cohort~~ | All Copilot exercises | NYPL (Mike) | Confirmed — licenses by 3/1 |
 | Sandbox codebase not yet built | Labs 2, 3, capstone | — | Feb 24–28 |
