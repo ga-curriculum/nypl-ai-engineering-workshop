@@ -7,9 +7,9 @@ A 6-hour in-person workshop for the New York Public Library, teaching software e
 | Detail | Info |
 |---|---|
 | **Client** | New York Public Library (NYPL) |
-| **Audience** | 50 software engineers (SE, QA, DevOps) — 2 to 25 years experience |
+| **Audience** | 25 software engineers per session (SE, QA, DevOps) — 2 to 25 years experience |
 | **Duration** | 6 hours, in-person with devices |
-| **Delivery Date** | March 19, 2026 |
+| **Delivery Dates** | March 18, 2026 (Cohort 1) and March 24, 2026 (Cohort 2) |
 | **Tools** | Google Gemini + GitHub Copilot (dual-tool framework) |
 | **Language** | Python |
 
@@ -83,8 +83,9 @@ See [docs/environment-setup.md](docs/environment-setup.md) for detailed Gemini a
 | 2 | Feb 24–28 | Python sandbox codebase, Labs 1–2, Module 2 content |
 | 3 | Mar 2–6 | Labs 3–4, Modules 3–4, capstone challenge |
 | 4 | Mar 9–13 | Full dry run, facilitator guide finalization |
-| 5 | Mar 16–18 | Final polish, pre-delivery check |
-| **Delivery** | **Mar 19** | **Workshop day** |
+| 5 | Mar 16–17 | Final polish, pre-delivery check |
+| **Delivery 1** | **Mar 18** | **Cohort 1 (25 engineers)** |
+| **Delivery 2** | **Mar 24** | **Cohort 2 (25 engineers)** |
 
 See [docs/timeline.md](docs/timeline.md) for detailed breakdown and [docs/build-tracker.md](docs/build-tracker.md) for current progress.
 

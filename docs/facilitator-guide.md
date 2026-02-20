@@ -5,7 +5,8 @@
 | Detail | Info |
 |---|---|
 | **Duration** | 6 hours (with breaks) |
-| **Audience** | 50 software engineers, 2–25 years experience |
+| **Audience** | 25 software engineers per session, 2–25 years experience |
+| **Sessions** | 2 cohorts: March 18 and March 24, 2026 |
 | **Tools** | Google Gemini + GitHub Copilot |
 | **Language** | Python |
 | **Format** | In-person, devices required |
@@ -28,14 +29,14 @@
 ## Pre-Workshop Checklist
 
 ### 1 Week Before
-- [ ] Confirm all 50 participants have GitHub Copilot licenses activated
+- [ ] Confirm all 25 participants (for this cohort) have GitHub Copilot licenses activated
 - [ ] Confirm Gemini access (API keys or workspace access) for all participants
 - [ ] Send environment setup instructions ([docs/environment-setup.md](environment-setup.md))
 - [ ] Test the sandbox codebase on a clean machine
 - [ ] Print participant handouts (if applicable)
 
 ### Day Before
-- [ ] Verify venue WiFi can handle 50+ simultaneous connections
+- [ ] Verify venue WiFi can handle 25+ simultaneous connections
 - [ ] Test screen sharing / projector setup
 - [ ] Clone the repo fresh and run through setup to catch any last-minute issues
 - [ ] Prepare backup plan for tool access issues (see Contingency Plans below)

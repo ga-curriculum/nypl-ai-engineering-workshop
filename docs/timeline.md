@@ -1,6 +1,7 @@
 # Development Timeline
 
-**Delivery date:** March 19, 2026
+**Delivery dates:** March 18, 2026 (Cohort 1) and March 24, 2026 (Cohort 2)
+**Cohort size:** 25 engineers each
 
 ## Week 1: Feb 18–21 — Scaffold and Foundation
 
@@ -58,7 +59,7 @@
 
 ### Milestone: Workshop ready for final polish
 
-## Week 5: Mar 16–18 — Final Prep
+## Week 5: Mar 16–17 — Final Prep
 
 - [ ] Final polish on all materials
 - [ ] Pre-delivery environment check (test fresh clone + setup)
@@ -66,4 +67,12 @@
 - [ ] Print any physical handouts
 - [ ] Final facilitator briefing
 
-### March 19 — Workshop Day
+### March 18 — Cohort 1 (25 engineers)
+
+### March 19–23 — Post Cohort 1
+
+- [ ] Collect Cohort 1 feedback
+- [ ] Adjust timing, exercises, or facilitator notes based on day 1 learnings
+- [ ] Fix any issues encountered during delivery
+
+### March 24 — Cohort 2 (25 engineers)
