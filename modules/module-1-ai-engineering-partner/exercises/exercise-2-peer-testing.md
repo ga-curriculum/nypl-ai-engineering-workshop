@@ -12,7 +12,7 @@ Refine your prompts by having someone else test them. A prompt that works for yo
 - Share your high-context prompt from Exercise 1 (on screen, Slack, or paper)
 
 ### Step 2: Test your partner's prompt (4 min)
-1. Paste their prompt into Gemini (don't modify it)
+1. Enter their prompt into Gemini Code Assist chat (don't modify it)
 2. Evaluate the output:
    - Did it produce working Python code?
    - Was the output what you think your partner intended?

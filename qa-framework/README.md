@@ -16,7 +16,7 @@ The QA Refinement Framework is the key differentiator of this workshop. It teach
                                         └──> Repeat until quality bar is met
 ```
 
-1. **Generate** — Use Gemini or Copilot to produce code or a solution
+1. **Generate** — Use Gemini Code Assist or Copilot to produce code or a solution
 2. **Review** — Invoke a QA persona to evaluate the output against specific criteria
 3. **Refine** — Feed the review feedback back into the tool and iterate
 
@@ -43,7 +43,7 @@ Every lab's `review/` folder contains:
 
 | Lab | Primary Persona | Why |
 |---|---|---|
-| Lab 1: Gemini Reasoning | Code Readability Reviewer | Focus on clear, well-structured output |
+| Lab 1: Code Analysis | Code Readability Reviewer | Focus on clear, well-structured output |
 | Lab 2: Feature Build Sprint | Edge Case Hunter | New feature code needs boundary testing |
 | Lab 3: AI Test Suite | Test Coverage Analyst | Directly evaluating test quality |
 | Lab 4: Code Review Tagging | Security Auditor | Full review lens for the tagging exercise |

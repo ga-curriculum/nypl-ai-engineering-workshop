@@ -5,8 +5,8 @@
 | Detail | Info |
 |---|---|
 | **Duration** | 90 minutes (60 min lecture + 30 min Lab 2) |
-| **Position** | 11:00 AM–12:30 PM |
-| **Tools** | Google Gemini + GitHub Copilot |
+| **Position** | 11:30 AM–1:00 PM |
+| **Tools** | Google Gemini Code Assist + GitHub Copilot |
 | **Lab** | Lab 2: Feature Build Sprint |
 | **Depends On** | Sandbox codebase |
 
@@ -21,7 +21,7 @@ By the end of this module, participants will be able to:
 ## Content Outline
 
 ### Part 1: Understanding Code with AI (20 min)
-- Using Gemini to analyze code architecture and dependencies
+- Using Gemini Code Assist to analyze code architecture and dependencies
 - Using Copilot chat to explain functions and trace data flow
 - Demo: Navigating the sandbox codebase with AI assistance
 - Key skill: Asking the right questions about unfamiliar code
@@ -33,7 +33,7 @@ By the end of this module, participants will be able to:
 - Live exercise: Decompose a feature request together
 
 ### Part 3: Lab 2 — Feature Build Sprint (35 min)
-- Build a feature in the sandbox codebase using Gemini + Copilot
+- Build a feature in the sandbox codebase using Gemini Code Assist + Copilot
 - Apply task decomposition to manage the work
 - See [labs/lab-2-feature-build-sprint/](../../labs/lab-2-feature-build-sprint/)
 

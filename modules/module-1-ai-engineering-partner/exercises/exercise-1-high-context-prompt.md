@@ -3,7 +3,7 @@
 ## Duration: 10 minutes
 
 ## Setup
-- Open Google Gemini (web, API, or VS Code extension)
+- Open the Gemini Code Assist chat panel in VS Code
 - Have GitHub Copilot active in your editor
 
 ## Instructions
@@ -26,7 +26,7 @@ Rewrite this as a high-context prompt. Your prompt should include:
 
 ### Step 2: Test your prompt (3 min)
 
-1. Paste your prompt into Gemini
+1. Enter your prompt in the Gemini Code Assist chat panel
 2. Evaluate the output:
    - Did it match your expectations?
    - What did it get right?
@@ -46,13 +46,13 @@ def filter_users(
 ```
 
 Let Copilot complete the function. Compare:
-- How does Copilot's output differ from Gemini's?
+- How does Copilot's output differ from Gemini Code Assist's?
 - Which tool produced more usable code for this task?
 
 ## Record Your Findings
 
 | Version | Tool | Output Quality (1-5) | What worked | What to improve |
 |---|---|---|---|---|
-| Vague prompt | Gemini | | | |
-| High-context prompt | Gemini | | | |
+| Vague prompt | Gemini Code Assist | | | |
+| High-context prompt | Gemini Code Assist | | | |
 | High-context prompt | Copilot | | | |

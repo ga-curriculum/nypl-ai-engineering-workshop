@@ -6,7 +6,7 @@ This is the Python codebase used across all workshop labs. It simulates a realis
 
 The sandbox serves as the "existing codebase" that participants work with throughout the workshop:
 
-- **Lab 1**: Analyze this code with Gemini
+- **Lab 1**: Analyze this code with Gemini Code Assist
 - **Lab 2**: Build a new feature in this codebase
 - **Lab 3**: Generate and evaluate tests for this code
 - **Lab 4**: Review and tag code in this codebase
@@ -52,10 +52,19 @@ This codebase is intentionally:
 - **Extensible**: Designed for participants to add features during labs
 - **Testable**: Structured to support meaningful test generation exercises
 
+## NYPL Sandbox Codebase (Pending)
+
+The sandbox codebase will be hosted in NYPL's GitHub organization (expected org name: `NYPLGA-training`). It is a fork of **python-utils**, which NYPL is setting up with Copilot licenses attached. Fork URL pending — expected from Mike Benowitz / Kimi.
+
+Once the fork URL is available:
+- Labs 2, 3, and the capstone will point to the NYPL fork
+- This directory will contain setup instructions, task definitions, and solution files that reference the fork
+- The fork needs to be audited against our workshop requirements (existing tests, simple setup, extensible)
+
 ## TODO
 
-- [ ] Build core application code
-- [ ] Create utility modules
-- [ ] Write starter test suite
-- [ ] Define tiered tasks (base/intermediate/stretch)
-- [ ] Write requirements.txt with dependencies
+- [ ] Receive NYPL fork URL and update clone instructions
+- [ ] Audit python-utils fork (file count, test coverage, setup complexity)
+- [ ] Build tiered task definitions (base/intermediate/stretch)
+- [ ] Write solution files for labs
+- [ ] Update requirements.txt with dependencies

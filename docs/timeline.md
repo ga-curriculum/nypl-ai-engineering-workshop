@@ -35,7 +35,7 @@
 - [ ] Build Lab 3 (AI Test Suite)
 - [ ] Complete Modules 1 and 2 slide content
 - [ ] Begin Module 3 content
-- [ ] Test all exercises end-to-end with Gemini and Copilot
+- [ ] Test all exercises end-to-end with Gemini Code Assist and Copilot
 
 ### Milestone: Sandbox codebase complete and all labs through Lab 3 functional
 
@@ -54,7 +54,7 @@
 - [ ] Full dry run of workshop (6-hour simulation)
 - [ ] Finalize facilitator guide with real timing from dry run
 - [ ] Fix any issues found during dry run
-- [ ] Final review of all Gemini and Copilot references (no GPT/OpenAI/LangChain)
+- [ ] Final review of all Gemini Code Assist and Copilot references (no GPT/OpenAI/LangChain)
 - [ ] Peer review all lab solutions
 
 ### Milestone: Workshop ready for final polish
@@ -69,7 +69,7 @@
 
 ### March 18 — Cohort 1 (25 engineers)
 
-### March 19–23 — Post Cohort 1
+### March 19–23 — Post Cohort 1 / Prep for Cohort 2
 
 - [ ] Collect Cohort 1 feedback
 - [ ] Adjust timing, exercises, or facilitator notes based on day 1 learnings

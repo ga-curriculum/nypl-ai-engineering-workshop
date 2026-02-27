@@ -57,7 +57,7 @@ Track what's done, in progress, and who owns what. Update this as you work.
 
 | Lab | Status | Owner | Notes |
 |---|---|---|---|
-| Lab 1: Gemini Reasoning | Not Started | — | |
+| Lab 1: Code Analysis | Not Started | — | |
 | Lab 2: Feature Build Sprint | Not Started | — | Depends on sandbox |
 | Lab 3: AI Test Suite | Not Started | — | Depends on Lab 2 |
 | Lab 4: Code Review Tagging | Not Started | — | |
@@ -74,6 +74,6 @@ Track what's done, in progress, and who owns what. Update this as you work.
 
 | Blocker | Impact | Owner | Target Resolution |
 |---|---|---|---|
-| ~~Confirm Gemini access for 25 participants per cohort~~ | All Gemini exercises | NYPL (Mike) | Confirmed — licenses by 3/1 |
+| ~~Confirm Gemini Code Assist access for 25 participants per cohort~~ | All Gemini Code Assist exercises | NYPL (Mike) | Confirmed — licenses by 3/1 |
 | ~~Confirm Copilot licenses for 25 participants per cohort~~ | All Copilot exercises | NYPL (Mike) | Confirmed — licenses by 3/1 |
 | Sandbox codebase not yet built | Labs 2, 3, capstone | — | Feb 24–28 |

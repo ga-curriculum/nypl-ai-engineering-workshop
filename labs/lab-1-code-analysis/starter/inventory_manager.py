@@ -3,7 +3,7 @@ Inventory Manager — Starter Code for Lab 1
 
 This module manages a simple product inventory for a bookstore.
 It has several issues that participants should identify using
-Gemini's reasoning capabilities, then fix with Copilot.
+Gemini Code Assist's analysis capabilities, then fix with Copilot.
 """
 
 import json

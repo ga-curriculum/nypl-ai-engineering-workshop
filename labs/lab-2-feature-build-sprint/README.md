@@ -5,21 +5,21 @@
 | Detail | Info |
 |---|---|
 | **Duration** | 35 minutes |
-| **Tools** | Google Gemini + GitHub Copilot |
+| **Tools** | Google Gemini Code Assist + GitHub Copilot |
 | **Module** | Module 2: Working with Existing Codebases |
 | **QA Persona** | Edge Case Hunter |
 | **Depends On** | Sandbox codebase (`sandbox/`) |
 
 ## Objective
 
-Build a new feature in the sandbox Python codebase using the dual-tool workflow: Gemini for planning and task decomposition, Copilot for implementation.
+Build a new feature in the sandbox Python codebase using the dual-tool workflow: Gemini Code Assist for planning and task decomposition, Copilot for implementation.
 
 ## Instructions
 
 ### Base Tier (2–5 years experience)
 
 1. Read the feature spec in `starter/`
-2. Use Gemini to decompose the feature into implementation steps
+2. Use Gemini Code Assist to decompose the feature into implementation steps
 3. Implement each step using Copilot inline suggestions
 4. Run the existing tests to verify you haven't broken anything: `python -m pytest sandbox/src/tests/`
 5. Apply the Edge Case Hunter persona (see `review/`) to your new code
@@ -27,16 +27,20 @@ Build a new feature in the sandbox Python codebase using the dual-tool workflow:
 ### Intermediate Tier (5–15 years experience)
 
 All of the above, plus:
-6. Ask Gemini to identify edge cases specific to your implementation
-7. Write tests for at least 3 edge cases Gemini identifies
+6. Ask Gemini Code Assist to identify edge cases specific to your implementation
+7. Write tests for at least 3 edge cases Gemini Code Assist identifies
 8. Refactor your implementation based on the edge case analysis
 
 ### Stretch Tier (15–25 years experience)
 
 All of the above, plus:
-9. Use Gemini to evaluate your task decomposition: "Was this the right breakdown?"
-10. Implement error handling using Copilot, then have Gemini review it
+9. Use Gemini Code Assist to evaluate your task decomposition: "Was this the right breakdown?"
+10. Implement error handling using Copilot, then have Gemini Code Assist review it
 11. Write a brief architectural decision record (ADR) for your implementation choices
+
+## Codebase
+
+This lab uses NYPL's **python-utils** codebase, hosted in NYPL's GitHub organization. See `sandbox/README.md` for setup instructions and the fork URL.
 
 ## Important
 

@@ -4,7 +4,7 @@ After labeling the code samples, apply this security review to the ones you iden
 
 ## Persona: Security Auditor
 
-Use this prompt with Gemini:
+Use this prompt in the Gemini Code Assist chat panel:
 
 ```
 Act as a senior security auditor. Review the following Python code

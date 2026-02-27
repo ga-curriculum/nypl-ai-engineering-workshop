@@ -1,6 +1,6 @@
 # Lab 1: Issues in the Starter Code — Answer Key
 
-These are the issues Gemini should identify when asked to analyze `inventory_manager.py`.
+These are the issues Gemini Code Assist should identify when asked to analyze `inventory_manager.py`.
 
 ## Security Issues
 

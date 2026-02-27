@@ -9,7 +9,7 @@ Practice writing AI disclosure statements for realistic engineering scenarios.
 
 ### Scenario A
 
-You used Gemini to design the architecture for a new user authentication module. You then used Copilot to implement it, accepting many inline suggestions. You wrote the tests yourself but used Gemini to review them.
+You used Gemini Code Assist to design the architecture for a new user authentication module. You then used Copilot to implement it, accepting many inline suggestions. You wrote the tests yourself but used Gemini Code Assist to review them.
 
 **Write a PR description for this work.** Include an "AI Assistance" section that accurately describes what was AI-generated, AI-assisted, and human-written.
 

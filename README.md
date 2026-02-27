@@ -1,6 +1,6 @@
 # AI-Assisted Software Engineering Workshop — NYPL
 
-A 6-hour in-person workshop for the New York Public Library, teaching software engineers how to integrate AI tools into professional development workflows using **Google Gemini** and **GitHub Copilot**.
+A 6-hour in-person workshop for the New York Public Library, teaching software engineers how to integrate AI tools into professional development workflows using **Google Gemini Code Assist** and **GitHub Copilot**.
 
 ## Workshop Overview
 
@@ -10,7 +10,7 @@ A 6-hour in-person workshop for the New York Public Library, teaching software e
 | **Audience** | 25 software engineers per session (SE, QA, DevOps) — 2 to 25 years experience |
 | **Duration** | 6 hours, in-person with devices |
 | **Delivery Dates** | March 18, 2026 (Cohort 1) and March 24, 2026 (Cohort 2) |
-| **Tools** | Google Gemini + GitHub Copilot (dual-tool framework) |
+| **Tools** | Google Gemini Code Assist + GitHub Copilot (dual-tool framework) |
 | **Language** | Python |
 
 ## Modules
@@ -26,7 +26,7 @@ A 6-hour in-person workshop for the New York Public Library, teaching software e
 
 | Lab | Focus | Builds On |
 |---|---|---|
-| 1 | Gemini Reasoning | Module 1 |
+| 1 | Code Analysis | Module 1 |
 | 2 | Feature Build Sprint | Module 2 |
 | 3 | AI Test Suite | Lab 2 output |
 | 4 | Code Review and Tagging | Module 4 |
@@ -56,7 +56,7 @@ nypl-ai-engineering-workshop/
 
 - Python 3.10+
 - GitHub Copilot access (license required)
-- Google Gemini access (API key or workspace access)
+- Google Gemini Code Assist (VS Code extension)
 - Git
 
 ### Setup
@@ -73,7 +73,7 @@ source venv/bin/activate   # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-See [docs/environment-setup.md](docs/environment-setup.md) for detailed Gemini and Copilot configuration.
+See [docs/environment-setup.md](docs/environment-setup.md) for detailed Gemini Code Assist and Copilot configuration.
 
 ## Development Timeline
 

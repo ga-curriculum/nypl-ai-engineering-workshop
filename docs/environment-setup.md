@@ -34,34 +34,28 @@ You should see all tests pass.
 
 ## Step 3: Configure GitHub Copilot
 
+> **Copilot access** will be provisioned through NYPL's GitHub organization. You will receive an invitation to join the organization with Copilot licenses attached. Accept the invitation before proceeding.
+
 1. **Install the extension:** In VS Code, search for "GitHub Copilot" in the Extensions panel and install it
-2. **Sign in:** Click the Copilot icon in the status bar and sign in with your GitHub account
+2. **Sign in:** Click the Copilot icon in the status bar and sign in with the GitHub account that has the NYPL org membership
 3. **Verify:** Open a Python file and start typing — you should see gray inline suggestions
 
 If Copilot isn't suggesting anything:
+- Ensure you accepted the NYPL GitHub org invitation
 - Check that your license is active at [github.com/settings/copilot](https://github.com/settings/copilot)
 - Ensure the extension is enabled for Python files
 - Try reloading VS Code (`Cmd+Shift+P` > "Reload Window")
 
-## Step 4: Configure Google Gemini
+## Step 4: Configure Google Gemini Code Assist
 
-### Option A: Gemini in VS Code (if using Gemini Code Assist)
-1. Install the "Gemini Code Assist" extension in VS Code
-2. Sign in with your Google account
-3. Verify by opening the Gemini chat panel
+1. **Install the extension:** In VS Code, search for "Gemini Code Assist" in the Extensions panel (publisher: Google) and install it
+2. **Sign in:** Click the Gemini Code Assist icon in the sidebar and sign in with your Google account
+3. **Verify:** Open the Gemini Code Assist chat panel and send a test prompt (e.g., "Hello, what can you help me with?")
 
-### Option B: Gemini API Access
-1. Obtain your API key (provided by your organization or at [aistudio.google.com](https://aistudio.google.com))
-2. Set it as an environment variable:
-   ```bash
-   export GEMINI_API_KEY="your-api-key-here"
-   ```
-3. Add to your shell profile (`.bashrc`, `.zshrc`) to persist across sessions
-
-### Option C: Gemini Web Interface
-- Navigate to [gemini.google.com](https://gemini.google.com)
-- Sign in with your Google account
-- This is the fallback option if API/extension setup has issues
+If Gemini Code Assist isn't working:
+- Ensure you're signed in with the correct Google account (your organization account, not personal)
+- Try reloading VS Code (`Cmd+Shift+P` > "Reload Window")
+- Check that the extension is enabled and not conflicting with other AI extensions
 
 ## Troubleshooting
 
@@ -69,7 +63,7 @@ If Copilot isn't suggesting anything:
 |---|---|
 | `python` command not found | Try `python3` instead. Ensure Python is on your PATH. |
 | Copilot not showing suggestions | Reload VS Code. Check license status. Disable competing extensions. |
-| Gemini API returns 403 | Verify your API key. Check that the Gemini API is enabled in your Google Cloud project. |
+| Gemini Code Assist not responding | Reload VS Code. Check Google account sign-in. Verify the extension is enabled. |
 | `pip install` fails | Ensure you're in the virtual environment (`venv`). Try `pip install --upgrade pip` first. |
 | Tests fail on setup | Check Python version (`python --version`). Must be 3.10+. |
 
@@ -80,6 +74,6 @@ Run this checklist:
 - [ ] `python --version` shows 3.10+
 - [ ] `python -m pytest sandbox/tests/ -v` passes
 - [ ] Copilot suggests completions in a `.py` file
-- [ ] Gemini responds to a test prompt (via extension, API, or web)
+- [ ] Gemini Code Assist responds to a test prompt in the VS Code chat panel
 
 If any step fails, contact the workshop team before the session.

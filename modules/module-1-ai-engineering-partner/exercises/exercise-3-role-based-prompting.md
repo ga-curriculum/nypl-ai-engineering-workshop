@@ -60,7 +60,7 @@ write pytest test cases for them.
 
 ### Step 2: Run your role-based prompt on the code above (3 min)
 
-Paste the code and your role prompt into Gemini. Review the output.
+Enter the code and your role prompt into the Gemini Code Assist chat panel. Review the output.
 
 ### Step 3: Try a different role (3 min)
 

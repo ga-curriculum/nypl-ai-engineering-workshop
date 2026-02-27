@@ -30,7 +30,7 @@ Use clear, imperative-style messages:
 
 - Use kebab-case for all filenames: `facilitator-guide.md`, not `FacilitatorGuide.md`
 - Module directories: `module-1-ai-engineering-partner/`
-- Lab directories: `lab-1-gemini-reasoning/`
+- Lab directories: `lab-1-code-analysis/`
 
 ### Markdown Style
 
@@ -49,9 +49,9 @@ Use clear, imperative-style messages:
 
 ### Tool References
 
-- **Google Gemini** and **GitHub Copilot** are the only AI tools referenced in participant-facing materials
+- **Google Gemini Code Assist** and **GitHub Copilot** are the only AI tools referenced in participant-facing materials
 - No GPT, OpenAI, ChatGPT, LangChain, or other tool references in exercises or guides
-- When showing AI interactions, include both Gemini and Copilot examples where applicable
+- When showing AI interactions, include both Gemini Code Assist and Copilot examples where applicable
 
 ### Tiered Difficulty
 

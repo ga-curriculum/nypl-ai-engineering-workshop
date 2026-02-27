@@ -14,7 +14,7 @@ Module 1 | 90 minutes
 ## Slide 2: Learning Objectives
 
 By the end of this module, you will:
-1. Use Google Gemini and GitHub Copilot as complementary engineering tools
+1. Use Google Gemini Code Assist and GitHub Copilot as complementary engineering tools
 2. Write high-context prompts that produce usable code on the first try
 3. Apply role-based prompting to get specialized output (security, performance, QA)
 4. Understand the Generate > Review > Refine loop that underpins the entire workshop
@@ -23,34 +23,37 @@ By the end of this module, you will:
 
 ## Slide 3: Why Two Tools?
 
-**Google Gemini** and **GitHub Copilot** are not competing tools — they have complementary strengths.
+**Google Gemini Code Assist** and **GitHub Copilot** are not competing tools — they have complementary strengths.
 
-| Capability | Gemini | Copilot |
+| Capability | Gemini Code Assist | Copilot |
 |---|---|---|
-| Reasoning and explanation | Strong | Moderate |
-| Multi-step planning | Strong | Moderate |
-| Inline code completion | N/A | Strong |
-| Context-aware suggestions in-editor | N/A | Strong |
-| Code review and analysis | Strong | Good (via chat) |
-| Generating code from scratch | Good | Strong (in-editor) |
+| Context window | 1M tokens (sees more of your codebase) | 128K tokens |
+| Reasoning and explanation | Detailed, step-by-step | Quick and concise |
+| Inline code completion | Yes | Yes (historically faster) |
+| Agent mode | Multi-agent collaboration (dev, tester, security) | Single-agent + cloud coding agent |
+| Code review on PRs | Free GitHub app | Built-in (Business+) |
+| Model flexibility | Gemini models | Multi-model (Claude, GPT, Gemini) |
+| Ecosystem | Google Cloud integration | GitHub-native (Issues, PRs, Actions) |
 
-**The dual-tool workflow:** Gemini for thinking, Copilot for building.
+**The dual-tool workflow:** Gemini Code Assist for depth, Copilot for velocity.
 
 ---
 
 ## Slide 4: When to Use Which Tool
 
-### Use Gemini when you need to:
-- Understand unfamiliar code ("Explain what this function does and why")
-- Plan before coding ("Break this feature into implementation steps")
-- Review and critique ("Find edge cases in this function")
-- Reason about architecture ("What are the trade-offs of approach A vs B?")
+Both tools live in your IDE. Both do inline completion and chat. The difference is their strengths.
+
+### Use Gemini Code Assist when you need to:
+- Analyze large sections of code (1M token context window)
+- Get detailed reasoning and step-by-step explanations
+- Plan multi-file changes with Agent Mode
+- Review code with deep, thorough analysis
 
 ### Use Copilot when you need to:
-- Write code in your editor (inline suggestions)
-- Complete boilerplate quickly (type a comment, get the implementation)
-- Generate tests from existing code
-- Refactor with chat guidance while staying in your IDE
+- Get fast inline suggestions while typing
+- Work within the GitHub workflow (Issues → PRs → Actions)
+- Choose between multiple AI models for different tasks
+- Generate tests and refactor with quick chat responses
 
 ---
 
@@ -58,23 +61,25 @@ By the end of this module, you will:
 
 **Task:** Write a Python function that validates an email address.
 
-### Gemini approach (reasoning first):
+### Gemini Code Assist approach (depth — in the IDE chat panel):
 ```
 I need a Python function that validates email addresses for a
 user registration system. Before writing code, help me think
 through: What constitutes a valid email? What edge cases should
 I handle? What's the simplest approach that's production-safe?
 ```
+*Notice: Gemini Code Assist gives a detailed, reasoned response with trade-offs and edge case analysis.*
 
-### Copilot approach (code-first):
+### Copilot approach (velocity — inline completion):
 ```python
 # Validate an email address for user registration.
 # Return (is_valid: bool, error: str | None).
 # Handle: empty input, missing @, invalid domain, length > 254
 def validate_email(email: str) -> tuple[bool, str | None]:
 ```
+*Notice: Copilot jumps straight to code. Fast, but you need to verify the logic yourself.*
 
-**Key point:** Gemini helped us think. Copilot helped us build. Both are valuable.
+**Key point:** Gemini Code Assist gave us a plan and reasoning. Copilot gave us code fast. Both are valuable — use them together.
 
 ---
 
@@ -162,7 +167,7 @@ error conditions.
 
 In a moment, you'll:
 1. Take a vague prompt and rewrite it as a high-context prompt
-2. Test it in Gemini
+2. Test it in Gemini Code Assist
 3. Exchange it with a peer for feedback
 4. Apply a role-based lens to get a different perspective
 
@@ -212,23 +217,23 @@ You'll use this template starting in Lab 1 and throughout the day.
 
 ## Slide 12: Lab 1 Preview
 
-**Lab 1: Gemini Reasoning** (30 minutes)
+**Lab 1: Code Analysis** (30 minutes)
 
-You'll use Gemini to analyze Python code, identify issues, and plan improvements — then use Copilot to implement fixes.
+You'll use Gemini Code Assist to analyze Python code, identify issues, and plan improvements — then use Copilot to implement fixes.
 
 Three tiers:
-- **Base:** Use Gemini to find top 3 issues, fix with Copilot
+- **Base:** Use Gemini Code Assist to find top 3 issues, fix with Copilot
 - **Intermediate:** Add architecture improvement
 - **Stretch:** Generate a full code review document and evaluate it
 
-See `labs/lab-1-gemini-reasoning/` for instructions.
+See `labs/lab-1-code-analysis/` for instructions.
 
 ---
 
 ## Slide 13: Recap
 
 What we covered:
-1. Gemini for reasoning + Copilot for building = dual-tool workflow
+1. Gemini Code Assist for depth + Copilot for velocity = dual-tool workflow
 2. High-context prompts produce better code faster
 3. Role-based prompting gives specialized perspectives
 4. Generate > Review > Refine is the loop we use all day

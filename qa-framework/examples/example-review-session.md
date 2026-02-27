@@ -44,7 +44,7 @@ This looks correct at first glance. But let's review it.
 
 ## Step 2: Review (Edge Case Hunter)
 
-**Prompt to Gemini:**
+**Prompt in Gemini Code Assist chat:**
 ```
 Act as an edge case hunter. Review this function for inputs
 that would cause failures:

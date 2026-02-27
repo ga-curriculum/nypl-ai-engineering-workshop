@@ -4,7 +4,7 @@ After completing Lab 1, apply this checklist to your final code.
 
 ## Persona: Code Readability Reviewer
 
-Use this prompt with Gemini to review your finished code:
+Use this prompt in the Gemini Code Assist chat panel to review your finished code:
 
 ```
 Act as a code readability reviewer. Evaluate the following Python

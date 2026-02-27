@@ -5,7 +5,7 @@
 | Detail | Info |
 |---|---|
 | **Duration** | 10 minutes |
-| **Tools** | Google Gemini (primary) |
+| **Tools** | Google Gemini Code Assist (primary) |
 | **Module** | Module 4: Transparency and Governance |
 | **QA Persona** | Security Auditor |
 

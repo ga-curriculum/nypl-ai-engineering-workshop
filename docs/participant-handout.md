@@ -1,27 +1,23 @@
 # Participant Handout — AI-Assisted Software Engineering
 
-Welcome to the AI-Assisted Software Engineering workshop. Today you'll learn to use **Google Gemini** and **GitHub Copilot** as professional engineering tools.
+Welcome to the AI-Assisted Software Engineering workshop. Today you'll learn to use **Google Gemini Code Assist** and **GitHub Copilot** as professional engineering tools.
 
 ## Today's Schedule
 
 | Time | Session |
 |---|---|
-| 9:00–9:15 | Welcome and Setup |
-| 9:15–10:45 | Module 1: AI as an Engineering Partner |
-| 10:45–11:00 | Break |
-| 11:00–12:30 | Module 2: Working with Existing Codebases |
-| 12:30–1:15 | Lunch |
-| 1:15–2:15 | Module 3: Testing and QA with AI |
-| 2:15–2:30 | Break |
-| 2:30–3:00 | Module 4: Transparency and Governance |
-| 3:00–3:45 | Capstone Challenge |
-| 3:45–4:00 | Wrap-up |
+| 10:00–11:30 | Module 1: AI as an Engineering Partner |
+| 11:30–1:00 | Module 2: Working with Existing Codebases |
+| 1:00–2:00 | Lunch |
+| 2:00–3:00 | Module 3: Testing and QA with AI |
+| 3:00–3:30 | Module 4: Transparency and Governance |
+| 3:30–4:00 | Wrap-up |
 
 ## Tools You'll Use
 
-### Google Gemini
-- Best for: Reasoning, explanation, planning, code review
-- Access: [Gemini setup instructions in environment-setup.md](environment-setup.md)
+### Google Gemini Code Assist
+- Best for: Deep code analysis (1M token context), detailed reasoning, multi-file planning with Agent Mode
+- Access: [Setup instructions in environment-setup.md](environment-setup.md) — install the VS Code extension
 
 ### GitHub Copilot
 - Best for: Inline code completion, context-aware suggestions, chat-based coding
@@ -31,7 +27,7 @@ Welcome to the AI-Assisted Software Engineering workshop. Today you'll learn to 
 
 Every lab follows this pattern:
 
-1. **Generate** — Use Gemini or Copilot to produce code
+1. **Generate** — Use Gemini Code Assist or Copilot to produce code
 2. **Review** — Apply a QA persona to evaluate the output
 3. **Refine** — Feed review feedback back and iterate
 
@@ -49,7 +45,7 @@ Each lab has three levels. Start where you're comfortable and stretch up:
 
 ## Quick Reference: Effective AI Prompts
 
-### For Gemini (reasoning and planning)
+### For Gemini Code Assist (deep analysis and reasoning)
 ```
 Analyze this Python function and identify potential edge cases
 that could cause failures in production. For each edge case,
@@ -82,7 +78,7 @@ Provide findings in a table: Issue | Severity | Location | Fix
 ```
 sandbox/          # The Python codebase you'll work with all day
 labs/             # Your lab instructions and starter code
-  lab-1/          # Gemini reasoning exercise
+  lab-1/          # Code analysis exercise
   lab-2/          # Feature build sprint
   lab-3/          # AI test suite (builds on Lab 2)
   lab-4/          # Code review and tagging

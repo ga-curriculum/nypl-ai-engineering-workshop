@@ -29,7 +29,7 @@ Not all AI-assisted code is the same. There's a spectrum:
 |---|---|---|
 | **Fully AI-generated** | AI wrote the code, human reviewed it | "Generate a pytest suite for this module" |
 | **AI-assisted** | Human wrote the code with AI suggestions | Copilot autocomplete accepted inline |
-| **AI-reviewed** | Human wrote the code, AI reviewed it | Gemini code review before PR |
+| **AI-reviewed** | Human wrote the code, AI reviewed it | Gemini Code Assist review before PR |
 | **Human-only** | No AI tools involved | Manual coding, no Copilot active |
 
 **Question for the room:** Where does your team draw the disclosure line?
@@ -58,7 +58,7 @@ If yes, disclose.
 ```
 ## AI Assistance
 
-- `utils/validators.py` — Functions generated with Gemini,
+- `utils/validators.py` — Functions generated with Gemini Code Assist,
   reviewed and modified by hand
 - `tests/test_validators.py` — Test suite generated with
   Copilot, reviewed with Test Coverage Analyst persona
@@ -67,7 +67,7 @@ If yes, disclose.
 
 ### In code comments (for significant blocks):
 ```python
-# AI-generated (Gemini) — reviewed and edge cases added manually
+# AI-generated (Gemini Code Assist) — reviewed and edge cases added manually
 def validate_isbn(isbn: str) -> bool:
     ...
 ```
@@ -76,7 +76,7 @@ def validate_isbn(isbn: str) -> bool:
 ```
 Add user validation module
 
-Generated initial implementation with Gemini, refined after
+Generated initial implementation with Gemini Code Assist, refined after
 security auditor review. Test suite generated with Copilot
 and verified against edge case checklist.
 ```

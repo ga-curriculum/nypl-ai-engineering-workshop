@@ -13,9 +13,9 @@ Verify all materials meet General Assembly brand requirements before delivery.
 
 ## Tool References
 
-- [ ] Only Google Gemini and GitHub Copilot are referenced as participant tools
+- [ ] Only Google Gemini Code Assist and GitHub Copilot are referenced as participant tools
 - [ ] No references to GPT, OpenAI, ChatGPT, or LangChain in participant-facing materials
-- [ ] Tool names are capitalized correctly (Google Gemini, GitHub Copilot)
+- [ ] Tool names are capitalized correctly (Google Gemini Code Assist, GitHub Copilot)
 - [ ] No endorsement language — tools are presented as options, not recommendations
 
 ## Accessibility

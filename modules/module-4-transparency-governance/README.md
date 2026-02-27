@@ -5,7 +5,7 @@
 | Detail | Info |
 |---|---|
 | **Duration** | 30 minutes (20 min lecture + 10 min Lab 4) |
-| **Position** | 2:30–3:00 PM |
+| **Position** | 3:00–3:30 PM |
 | **Tools** | Discussion-based (minimal tool use) |
 | **Lab** | Lab 4: Code Review Tagging |
 
@@ -35,6 +35,15 @@ By the end of this module, participants will be able to:
 - Label code samples as AI-generated, AI-assisted, or human-written
 - Apply the security auditor persona as a governance check
 - See [labs/lab-4-code-review-tagging/](../../labs/lab-4-code-review-tagging/)
+
+## NYPL-Specific Content (Pending)
+
+NYPL internal AI guidelines will be incorporated into this module once received from Kimi (NYPL Tech Lead). Expected additions:
+- NYPL's internal AI policy and stance on AI-assisted development
+- Any NYPL-specific disclosure requirements or tool restrictions
+- Integration into Exercise 2 (Team AI Policy Draft) as a reference point
+
+Additionally, NYPL leadership (Garvita or another lead) may co-teach 10–15 minutes of this module, presenting their internal AI stance before the hands-on exercises.
 
 ## Notes
 

@@ -28,7 +28,7 @@ Using the 5 essentials framework from the slides, draft a policy:
 
 **4. Data Handling**
 - What code or data can be shared with AI tools?
-- Are there restrictions on pasting proprietary code into Gemini or Copilot?
+- Are there restrictions on pasting proprietary code into Gemini Code Assist or Copilot?
 - Rules:
 
 **5. Accountability**

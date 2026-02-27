@@ -5,8 +5,8 @@
 | Detail | Info |
 |---|---|
 | **Duration** | 60 minutes (30 min lecture + 30 min Lab 3) |
-| **Position** | 1:15–2:15 PM |
-| **Tools** | Google Gemini + GitHub Copilot |
+| **Position** | 2:00–3:00 PM |
+| **Tools** | Google Gemini Code Assist + GitHub Copilot |
 | **Lab** | Lab 3: AI Test Suite |
 | **Depends On** | Lab 2 output (or Lab 2 solution/) |
 

@@ -48,7 +48,7 @@ claude
 ### 2.2 Provide the briefing
 Paste your briefing document into Claude Code. Include:
 - Workshop name, client, audience size, experience range
-- Tools being taught (e.g., Gemini + Copilot)
+- Tools being taught (e.g., Gemini Code Assist + Copilot)
 - Programming language
 - Module structure with timing
 - What to carry over from source repos (and what NOT to carry over)

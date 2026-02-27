@@ -5,7 +5,7 @@
 | Detail | Info |
 |---|---|
 | **Duration** | 30 minutes |
-| **Tools** | Google Gemini + GitHub Copilot |
+| **Tools** | Google Gemini Code Assist + GitHub Copilot |
 | **Module** | Module 3: Testing and QA with AI |
 | **QA Persona** | Test Coverage Analyst |
 | **Depends On** | Lab 2 output (or Lab 2 `solution/`) |
@@ -27,16 +27,20 @@ Generate a pytest test suite for your Lab 2 code using AI tools, then critically
 ### Intermediate Tier (5–15 years experience)
 
 All of the above, plus:
-6. Use Gemini to analyze your test suite: "What's NOT tested in this suite?"
-7. Write tests for 3 gaps Gemini identifies
-8. Ask Gemini: "Are any of these tests tautological?" — verify its findings
+6. Use Gemini Code Assist to analyze your test suite: "What's NOT tested in this suite?"
+7. Write tests for 3 gaps Gemini Code Assist identifies
+8. Ask Gemini Code Assist: "Are any of these tests tautological?" — verify its findings
 
 ### Stretch Tier (15–25 years experience)
 
 All of the above, plus:
-9. Generate a test suite with Copilot, then a separate one with Gemini — compare quality
+9. Generate a test suite with Copilot, then a separate one with Gemini Code Assist — compare quality
 10. Create a test quality scorecard: rate each test on specificity, coverage, and correctness
 11. Write a "test review" prompt that you'd use in your own workflow going forward
+
+## Codebase
+
+This lab uses NYPL's **python-utils** codebase, hosted in NYPL's GitHub organization. See `sandbox/README.md` for setup instructions and the fork URL.
 
 ## The Hallucinated Test Exercise
 

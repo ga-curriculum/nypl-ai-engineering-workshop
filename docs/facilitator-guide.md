@@ -4,10 +4,11 @@
 
 | Detail | Info |
 |---|---|
-| **Duration** | 6 hours (with breaks) |
+| **Duration** | 10:00 AM – 4:00 PM (5 hours instruction + 1 hour lunch) |
 | **Audience** | 25 software engineers per session, 2–25 years experience |
-| **Sessions** | 2 cohorts: March 18 and March 24, 2026 |
-| **Tools** | Google Gemini + GitHub Copilot |
+| **Sessions** | Cohort 1: March 18, 2026 (GA Campus, Flatiron NYC — hybrid-capable) |
+| | Cohort 2: March 24, 2026 (NYPL Trustee's Room, Bryant Park — NOT hybrid-capable) |
+| **Tools** | Google Gemini Code Assist + GitHub Copilot |
 | **Language** | Python |
 | **Format** | In-person, devices required |
 
@@ -15,22 +16,20 @@
 
 | Time | Block | Duration | Type |
 |---|---|---|---|
-| 9:00–9:15 | Welcome and Setup Check | 15 min | Plenary |
-| 9:15–10:45 | Module 1: AI as an Engineering Partner | 90 min | Lecture + Lab 1 |
-| 10:45–11:00 | Break | 15 min | — |
-| 11:00–12:30 | Module 2: Working with Existing Codebases | 90 min | Lecture + Lab 2 |
-| 12:30–1:15 | Lunch | 45 min | — |
-| 1:15–2:15 | Module 3: Testing and QA with AI | 60 min | Lecture + Lab 3 |
-| 2:15–2:30 | Break | 15 min | — |
-| 2:30–3:00 | Module 4: Transparency and Governance | 30 min | Lecture + Lab 4 |
-| 3:00–3:45 | Capstone Challenge | 45 min | Hands-on |
-| 3:45–4:00 | Wrap-up and Q&A | 15 min | Plenary |
+| 10:00–11:30 | Module 1: AI as an Engineering Partner | 90 min | Lecture + Lab 1 |
+| 11:30–1:00 | Module 2: Working with Existing Codebases | 90 min | Lecture + Lab 2 |
+| 1:00–2:00 | Lunch | 60 min | — |
+| 2:00–3:00 | Module 3: Testing and QA with AI | 60 min | Lecture + Lab 3 |
+| 3:00–3:30 | Module 4: Transparency and Governance | 30 min | Lecture + Lab 4 |
+| 3:30–4:00 | Wrap-up and Q&A | 30 min | Plenary |
+
+> **Note:** This pacing assumes 5 hours of instruction (10am–4pm with 1 hour lunch). If confirmed as 6 hours of instruction, the additional time can expand Module 4, add a capstone challenge, or provide longer lab sessions.
 
 ## Pre-Workshop Checklist
 
 ### 1 Week Before
 - [ ] Confirm all 25 participants (for this cohort) have GitHub Copilot licenses activated
-- [ ] Confirm Gemini access (API keys or workspace access) for all participants
+- [ ] Confirm Gemini Code Assist extension is available for all participants (Google account access verified)
 - [ ] Send environment setup instructions ([docs/environment-setup.md](environment-setup.md))
 - [ ] Test the sandbox codebase on a clean machine
 - [ ] Print participant handouts (if applicable)
@@ -50,7 +49,7 @@
 
 ### Module 1: AI as an Engineering Partner (90 min)
 
-**Goal:** Participants understand the dual-tool framework and can use both Gemini and Copilot for basic code generation tasks.
+**Goal:** Participants understand the dual-tool framework and can use both Gemini Code Assist and Copilot for basic code generation tasks.
 
 **Timing breakdown:**
 | Segment | Time |
@@ -62,19 +61,20 @@
 | Exercise 3: Role-Based Prompting | 12 min |
 | Slides 9–11: Generate > Review > Refine intro | 8 min |
 | Transition to Lab 1 | 5 min |
-| Lab 1: Gemini Reasoning | 30 min |
+| Lab 1: Code Analysis | 30 min |
 
 **Key talking points:**
-- Gemini excels at reasoning, explanation, and multi-step planning
-- Copilot excels at inline code completion and context-aware suggestions
-- They complement each other — not competing tools
+- Both tools live in VS Code — Gemini Code Assist and Copilot are both IDE extensions
+- Gemini Code Assist excels at deep analysis (1M token context), detailed reasoning, and multi-agent planning
+- Copilot excels at fast inline completion, GitHub workflow integration, and multi-model flexibility
+- They complement each other — depth vs. velocity, not competing tools
 - The Generate > Review > Refine loop is introduced here and used all day
 
 **Demo script (Slide 5):**
-- Show the same task (email validation) given to Gemini and Copilot
-- Gemini prompt: Ask it to reason about what makes a valid email first
-- Copilot: Type a descriptive comment and let it autocomplete the function
-- Point out: Gemini gave you a plan, Copilot gave you code — use both
+- Show the same task (email validation) given to both tools in VS Code
+- Gemini Code Assist: Open the chat panel and ask it to reason about what makes a valid email first — point out the detailed, step-by-step response
+- Copilot: Type a descriptive comment and let it autocomplete the function — point out the speed
+- Point out: Gemini Code Assist gave you depth and reasoning, Copilot gave you code fast — use both
 
 **Exercise 3 answer key:**
 - The sample code (`load_config`, `get_users`, `calculate_average_rating`) contains:
@@ -87,10 +87,10 @@
 
 **Lab 1 notes:**
 - The starter code (`inventory_manager.py`) has 16 intentional issues across 5 categories
-- Circulate during the lab. Common sticking points: Gemini API auth, Copilot not activating in VS Code
+- Circulate during the lab. Common sticking points: Gemini Code Assist extension sign-in, Copilot not activating in VS Code
 - Remind participants to try all three difficulty tiers (base/intermediate/stretch)
 - Time check: allow 30 min for the lab portion
-- Answer key is in `labs/lab-1-gemini-reasoning/solution/issues-found.md`
+- Answer key is in `labs/lab-1-code-analysis/solution/issues-found.md`
 
 ### Module 2: Working with Existing Codebases (90 min)
 
@@ -124,10 +124,14 @@
 
 **Goal:** Participants understand responsible AI use in engineering contexts.
 
+**Optional: NYPL Guest Segment (10–15 min)**
+NYPL leadership (Garvita or team lead) may present their internal AI guidelines before the hands-on exercises. If confirmed, position this segment before Exercise 2 (Team AI Policy Draft). Adjust the timing below accordingly — slides can be condensed to make room.
+
 **Timing breakdown:**
 | Segment | Time |
 |---|---|
 | Slides 1–5: Disclosure spectrum + practice | 10 min |
+| *(Optional) NYPL AI guidelines presentation* | *10–15 min* |
 | Slides 6–8: IP, governance, QA framework as governance | 10 min |
 | Slide 9: Quick poll (interactive) | 3 min |
 | Transition to Lab 4 | 2 min |
@@ -160,10 +164,11 @@
 - Use instructor screen share for demos
 - Copilot chat in browser (github.com/copilot) as fallback
 
-### Gemini Access Issues
-- Provide a shared API key for the workshop (rotate after)
-- Use Gemini web interface as fallback
-- Pre-record demo videos of key Gemini interactions
+### Gemini Code Assist Extension Issues
+- Have participants sign out and sign back in to the extension
+- Check for conflicting AI extensions (disable others temporarily)
+- If extension won't load, have participants pair up with a neighbor
+- Pre-record demo videos of key Gemini Code Assist interactions as backup
 
 ### WiFi Issues
 - Pre-download all dependencies into the sandbox venv

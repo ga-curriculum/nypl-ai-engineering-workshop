@@ -24,7 +24,7 @@
 
 | Score | Criteria |
 |---|---|
-| 20 | Effective use of both Gemini and Copilot; each tool used for its strengths |
+| 20 | Effective use of both Gemini Code Assist and Copilot; each tool used for its strengths |
 | 15 | Good use of tools but leaned heavily on one; missed opportunities for the other |
 | 10 | Used tools but without clear strategy; prompts were vague |
 | 5 | Minimal tool usage; mostly manual coding |
