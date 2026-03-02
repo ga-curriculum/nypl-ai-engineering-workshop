@@ -16,21 +16,29 @@ git clone https://git.generalassemb.ly/modular-courses/nypl-ai-engineering-works
 cd nypl-ai-engineering-workshop
 ```
 
-## Step 2: Set Up the Python Sandbox
+## Step 2: Set Up the Python Sandbox (python-utils)
+
+The workshop uses NYPL's **python-utils** library as the codebase you'll work with. Clone it as a separate repo alongside the workshop repo:
 
 ```bash
-cd sandbox
+# From the same parent directory as the workshop repo
+git clone https://github.com/NYPL-GA-Training/python-utils.git
+cd python-utils
+
+# Create a virtual environment
 python -m venv venv
 source venv/bin/activate   # On Windows: venv\Scripts\activate
-pip install -r requirements.txt
+
+# Install all dependencies (includes pytest, mocks — no AWS credentials needed)
+pip install '.[development]'
 ```
 
 Verify the setup:
 ```bash
-python -m pytest tests/ -v
+python -m pytest
 ```
 
-You should see all tests pass.
+You should see all 103 tests pass.
 
 ## Step 3: Configure GitHub Copilot
 
@@ -72,7 +80,7 @@ If Gemini Code Assist isn't working:
 Run this checklist:
 
 - [ ] `python --version` shows 3.10+
-- [ ] `python -m pytest sandbox/tests/ -v` passes
+- [ ] `python -m pytest` passes (run from the `python-utils/` directory)
 - [ ] Copilot suggests completions in a `.py` file
 - [ ] Gemini Code Assist responds to a test prompt in the VS Code chat panel
 

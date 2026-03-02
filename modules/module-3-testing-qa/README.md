@@ -8,7 +8,7 @@
 | **Position** | 2:00–3:00 PM |
 | **Tools** | Google Gemini Code Assist + GitHub Copilot |
 | **Lab** | Lab 3: AI Test Suite |
-| **Depends On** | Lab 2 output (or Lab 2 solution/) |
+| **Depends On** | python-utils clone (uses original `s3_client.py` — Lab 2 completion not required) |
 
 ## Learning Objectives
 
@@ -33,7 +33,7 @@ By the end of this module, participants will be able to:
 - The review checklist: what to verify in every AI-generated test
 
 ### Part 3: Lab 3 — AI Test Suite (30 min)
-- Generate tests for Lab 2 code, then review with the persona
+- Review AI-generated tests for the original `s3_client.py`, then apply the persona
 - Hallucinated test exercise: identify the fake assertions
 - See [labs/lab-3-ai-test-suite/](../../labs/lab-3-ai-test-suite/)
 

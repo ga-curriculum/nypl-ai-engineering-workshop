@@ -44,7 +44,7 @@ nypl-ai-engineering-workshop/
 ├── docs/                    # Facilitator guide, participant handout, setup, timeline
 ├── modules/                 # 4 workshop modules (slides + exercises)
 ├── labs/                    # 4 hands-on labs (starter, solution, review)
-├── sandbox/                 # Python codebase used across all labs
+├── sandbox/                 # Clone instructions for python-utils (the sandbox codebase)
 ├── qa-framework/            # QA personas, review templates, examples
 ├── capstone/                # Final challenge + rubric
 └── brand/                   # GA compliance checklist
@@ -62,15 +62,18 @@ nypl-ai-engineering-workshop/
 ### Setup
 
 ```bash
-# Clone the repo
+# Clone the workshop repo
 git clone https://git.generalassemb.ly/modular-courses/nypl-ai-engineering-workshop.git
-cd nypl-ai-engineering-workshop
 
-# Set up the Python sandbox
-cd sandbox
+# Clone the sandbox codebase (separate repo, alongside the workshop repo)
+git clone https://github.com/NYPL-GA-Training/python-utils.git
+cd python-utils
+
+# Set up and verify
 python -m venv venv
 source venv/bin/activate   # On Windows: venv\Scripts\activate
-pip install -r requirements.txt
+pip install '.[development]'
+python -m pytest           # All tests should pass
 ```
 
 See [docs/environment-setup.md](docs/environment-setup.md) for detailed Gemini Code Assist and Copilot configuration.
@@ -88,6 +91,10 @@ See [docs/environment-setup.md](docs/environment-setup.md) for detailed Gemini C
 | **Delivery 2** | **Mar 24** | **Cohort 2 (25 engineers)** |
 
 See [docs/timeline.md](docs/timeline.md) for detailed breakdown and [docs/build-tracker.md](docs/build-tracker.md) for current progress.
+
+## SME Review
+
+See [docs/sme-review-guide.md](docs/sme-review-guide.md) for setup instructions, review priorities, and a verification checklist.
 
 ## Contributing
 

@@ -75,14 +75,21 @@ Provide findings in a table: Issue | Severity | Location | Fix
 
 ## Repository Structure
 
+You'll work with **two repos** today:
+
 ```
-sandbox/          # The Python codebase you'll work with all day
-labs/             # Your lab instructions and starter code
-  lab-1/          # Code analysis exercise
-  lab-2/          # Feature build sprint
-  lab-3/          # AI test suite (builds on Lab 2)
-  lab-4/          # Code review and tagging
-capstone/         # Final challenge
+nypl-ai-engineering-workshop/    # Workshop instructions and exercises
+├── labs/                        # Your lab instructions and starter code
+│   ├── lab-1-code-analysis/
+│   ├── lab-2-feature-build-sprint/
+│   ├── lab-3-ai-test-suite/
+│   └── lab-4-code-review-tagging/
+├── capstone/                    # Final challenge
+└── qa-framework/                # QA personas for reviewing AI output
+
+python-utils/                    # The Python codebase you'll work with
+├── src/nypl_py_utils/classes/   # S3Client (Labs 2-3), KmsClient (capstone)
+└── tests/                       # Existing test suite
 ```
 
 ## Need Help?

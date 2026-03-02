@@ -15,10 +15,10 @@ Track what's done, in progress, and who owns what. Update this as you work.
 | Repo scaffold and structure | Done | — | Created Feb 18 |
 | README.md | Done | — | Created Feb 18 |
 | CONTRIBUTING.md | Done | — | Created Feb 18 |
-| Environment setup guide | Done | — | Created Feb 18 |
-| Facilitator guide (initial) | Done | — | Created Feb 18 — needs timing review |
+| Environment setup guide | Done | — | Updated Mar 1 — points to python-utils clone |
+| Facilitator guide (initial) | Done | — | Updated Mar 1 — concrete file refs for all labs |
 | Participant handout | Done | — | Created Feb 18 |
-| Branch protection on main | Not Started | — | Pending GHE setup |
+| Branch protection on main | Done | — | Require 1 PR review, dismiss stale reviews, admins can bypass |
 
 ## QA Framework
 
@@ -38,37 +38,35 @@ Track what's done, in progress, and who owns what. Update this as you work.
 
 | Item | Status | Owner | Notes |
 |---|---|---|---|
-| Core application code | Not Started | — | CRITICAL PATH — Labs 2+ depend on this |
-| Utility modules | Not Started | — | |
-| Starter test suite | Not Started | — | |
-| requirements.txt | Not Started | — | |
-| Tiered task definitions | Not Started | — | Base / Intermediate / Stretch |
+| python-utils fork available | Done | — | `NYPL-GA-Training/python-utils` on GitHub |
+| Sandbox README with clone instructions | Done | — | Updated Mar 1 — replaces scaffold |
+| Setup verified (`pip install '.[development]'`) | Done | — | 103 tests pass on clean clone |
 
 ## Modules
 
 | Module | Status | Owner | Notes |
 |---|---|---|---|
-| Module 1: AI Engineering Partner | Not Started | — | Adapt from Copilot + Prompt Dev modules |
-| Module 2: Existing Codebases | Not Started | — | Adapt from Chaining + Advanced Prompting |
-| Module 3: Testing and QA | Not Started | — | New content + pytest focus |
-| Module 4: Transparency and Governance | Not Started | — | Lightest module |
+| Module 1: AI Engineering Partner | Done | — | Slides, exercises, and answer keys complete |
+| Module 2: Existing Codebases | Done | — | Slides, exercise, and lab complete — uses `s3_client.py` |
+| Module 3: Testing and QA | Done | — | Slides and lab complete — hallucinated test exercise ready |
+| Module 4: Transparency and Governance | Done | — | Slides, exercises, and answer keys complete |
 
 ## Labs
 
 | Lab | Status | Owner | Notes |
 |---|---|---|---|
-| Lab 1: Code Analysis | Not Started | — | |
-| Lab 2: Feature Build Sprint | Not Started | — | Depends on sandbox |
-| Lab 3: AI Test Suite | Not Started | — | Depends on Lab 2 |
-| Lab 4: Code Review Tagging | Not Started | — | |
+| Lab 1: Code Analysis | Done | — | Starter code, solution, and review checklist complete |
+| Lab 2: Feature Build Sprint | Done | — | Feature spec (S3Client extensions), solution, review checklist |
+| Lab 3: AI Test Suite | Done | — | 10-test hallucination exercise (3 hallucinated), answer key, review checklist |
+| Lab 4: Code Review Tagging | Done | — | Starter code, solution, and review checklist complete |
 
 ## Capstone
 
 | Item | Status | Owner | Notes |
 |---|---|---|---|
-| Challenge brief | Not Started | — | Adapt from existing capstone |
-| Rubric | Not Started | — | |
-| Starter code | Not Started | — | Depends on sandbox |
+| Challenge brief | Done | — | KMS encrypt + secret rotation, 3 tiers |
+| Review checklist | Done | — | Security Auditor (primary) + Edge Case Hunter (secondary) |
+| Rubric | Done | — | Tier-specific scoring, concrete KMS examples, facilitator notes |
 
 ## Blockers
 
@@ -76,4 +74,4 @@ Track what's done, in progress, and who owns what. Update this as you work.
 |---|---|---|---|
 | ~~Confirm Gemini Code Assist access for 25 participants per cohort~~ | All Gemini Code Assist exercises | NYPL (Mike) | Confirmed — licenses by 3/1 |
 | ~~Confirm Copilot licenses for 25 participants per cohort~~ | All Copilot exercises | NYPL (Mike) | Confirmed — licenses by 3/1 |
-| Sandbox codebase not yet built | Labs 2, 3, capstone | — | Feb 24–28 |
+| ~~Sandbox codebase not yet built~~ | Labs 2, 3, capstone | — | Resolved — using NYPL-GA-Training/python-utils fork |

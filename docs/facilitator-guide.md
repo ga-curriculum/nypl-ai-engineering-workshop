@@ -96,29 +96,83 @@
 
 **Goal:** Participants can use AI tools to navigate, understand, and extend unfamiliar code.
 
+**Timing breakdown:**
+| Segment | Time |
+|---|---|
+| Slides 1–4: Unfamiliar code + asking the right questions | 8 min |
+| Slide 5: Demo — navigating the sandbox codebase | 7 min |
+| Slide 6: Context windowing | 5 min |
+| Slides 7–8: Task decomposition + decomposition prompt | 8 min |
+| Slide 9: Context matters — same task, different context | 4 min |
+| Exercise 1: Decompose a Feature Request | 12 min |
+| Slides 11–12: Lab preview + recap | 3 min |
+| Transition to Lab 2 | 3 min |
+| Lab 2: Feature Build Sprint | 35 min |
+| Lab 2 Debrief | 5 min |
+
 **Key talking points:**
-- Task decomposition: break large tasks into AI-sized chunks
-- Context matters: show how providing file context improves output
+- AI lets you "interview" an unfamiliar codebase — Gemini Code Assist for the big picture, Copilot for function-level details
+- Task decomposition: break large tasks into 5–7 AI-sized chunks
+- Context matters: show how providing file context improves output quality dramatically
 - The sandbox codebase is their "unfamiliar codebase" for this module
 
+**Demo script (Slide 5):**
+- Step 1: Open Gemini Code Assist chat and ask for an architectural overview of python-utils — point out how the 1M token context lets it see entire modules at once
+- Step 2: Open `s3_client.py`, highlight the `fetch_cache` method, and use Copilot to explain it line by line
+- Bridge the two: "Gemini Code Assist gave us the map, Copilot gives us turn-by-turn directions"
+
+**Exercise 1 notes:**
+- The exercise compares human vs. AI task decomposition — this is not about AI being better, it's about finding complementary strengths
+- Common observation: AI is more systematic about edge cases, humans are better at organizational context and priorities
+- Allow 3 min for neighbor discussion — this usually generates good energy
+
 **Lab 2 notes:**
-- This is the most hands-on module. Participants build a feature in the sandbox.
-- Lab 3 builds directly on Lab 2 output — make sure everyone reaches a working state
-- Have the solution/ folder ready for anyone who gets stuck
+- This is the most hands-on module. Participants extend `s3_client.py` in python-utils with new methods (`list_objects`, `fetch_csv`, `delete_cache`).
+- The feature spec is in `labs/lab-2-feature-build-sprint/starter/feature-spec.md`
+- Remind participants: the file is only ~65 lines with 2 existing tests (`tests/test_s3_client.py`) — manageable scope
+- Lab 3 uses the *original* `s3_client.py` (not Lab 2 extensions), so participants can proceed even if they didn't finish all tiers
+- Have the solution ready (`labs/lab-2-feature-build-sprint/solution/s3_client_extended.py`) for anyone who gets stuck
+- Introduce the Edge Case Hunter persona during the debrief — it's the review checklist for Lab 2
 
 ### Module 3: Testing and QA with AI (60 min)
 
 **Goal:** Participants can generate, evaluate, and refine test suites using AI tools.
 
+**Timing breakdown:**
+| Segment | Time |
+|---|---|
+| Slides 1–2: Title + learning objectives | 1 min |
+| Slide 3: Demo — generate a test suite in 60 seconds | 5 min |
+| Slides 4–5: Tests that lie + what makes a good test | 8 min |
+| Slide 6: Introducing the Test Coverage Analyst persona | 4 min |
+| Slide 7: Demo — finding hallucinated assertions | 7 min |
+| Slide 8: Generate > Review > Refine for testing | 3 min |
+| Slides 9–10: Lab preview + recap | 2 min |
+| Lab 3: AI Test Suite | 30 min |
+
 **Key talking points:**
-- AI-generated tests need review — hallucinated assertions are common
-- Introduce the QA Refinement Framework (Generate > Review > Refine)
-- pytest basics for anyone unfamiliar
+- AI-generated tests need review — hallucinated assertions are the #1 risk
+- Three anti-patterns: tautological assertions, hallucinated behavior, over-mocking
+- The Test Coverage Analyst persona systematically catches these issues
+- Use Gemini Code Assist for test review (1M context holds source + tests together), Copilot for test generation
+- Generate > Review > Refine applies to testing: Copilot generates, Gemini Code Assist reviews, Copilot fills gaps
+
+**Demo script (Slide 7):**
+- Show the `get_active_users` function and its 5 AI-generated tests
+- Walk through each test — first 3 are good, tests 4 and 5 are hallucinated
+- Test 4 (sorts by name): the function doesn't sort — this might pass by coincidence with certain input order
+- Test 5 (excludes deleted users): the function doesn't check the 'deleted' field
+- Ask the room: "Would you have caught these in a code review?" — this is the memorable moment
 
 **Lab 3 notes:**
-- Builds on Lab 2 output. Participants who didn't finish Lab 2 should use the solution/ code.
-- Highlight the hallucinated test exercise — this is a memorable teaching moment
-- Introduce the first QA persona (test-coverage-analyst)
+- The hallucinated test exercise targets the *original* `s3_client.py` (not Lab 2 extensions) — participants do NOT need to have finished Lab 2
+- The starter file (`labs/lab-3-ai-test-suite/starter/test_s3_client_review.py`) has 10 tests; 3 are hallucinated (Tests 4, 7, 9)
+- Participants copy the test file into `python-utils/tests/` and run it — 7 tests pass, 3 fail
+- **This is the memorable teaching moment** — walk the room and let participants discover the failures, then discuss why
+- Hallucination types: assumed retry logic (Test 4), assumed JSON error handling (Test 7), invented gzip compression (Test 9)
+- Answer key: `labs/lab-3-ai-test-suite/solution/hallucination-answers.md`
+- The Test Coverage Analyst persona is the review checklist for this lab
+- Remind participants: "If all tests pass, am I confident the code works correctly?"
 
 ### Module 4: Transparency and Governance (30 min)
 

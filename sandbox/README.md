@@ -1,70 +1,81 @@
-# Sandbox — Python Codebase
+# Sandbox — NYPL python-utils
 
-This is the Python codebase used across all workshop labs. It simulates a realistic application that participants will analyze, extend, test, and review using AI tools.
+The workshop labs use NYPL's **python-utils** library as the "existing codebase" that participants analyze, extend, test, and review with AI tools.
 
-## Purpose
+The codebase lives in a separate repository. You will clone it alongside this workshop repo — **do not copy it into this directory**.
 
-The sandbox serves as the "existing codebase" that participants work with throughout the workshop:
-
-- **Lab 1**: Analyze this code with Gemini Code Assist
-- **Lab 2**: Build a new feature in this codebase
-- **Lab 3**: Generate and evaluate tests for this code
-- **Lab 4**: Review and tag code in this codebase
-- **Capstone**: Full feature sprint using the sandbox
-
-## Structure
-
-```
-sandbox/
-├── src/
-│   ├── __init__.py
-│   ├── core/           # Base application code
-│   ├── utils/          # Utility functions
-│   └── tests/          # Starter test suite
-├── tasks/
-│   ├── base/           # Tasks for 2-5 years experience
-│   ├── intermediate/   # Tasks for 5-15 years experience
-│   └── stretch/        # Tasks for 15-25 years experience
-├── requirements.txt
-└── README.md           # This file
-```
-
-## Setup
+## Quick Start
 
 ```bash
-cd sandbox
+# 1. Clone the python-utils repo (alongside this workshop repo)
+git clone https://github.com/NYPL-GA-Training/python-utils.git
+cd python-utils
+
+# 2. Create a virtual environment
 python -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
+source venv/bin/activate   # On Windows: venv\Scripts\activate
+
+# 3. Install all dependencies (includes boto3, pytest, mocks — everything you need)
+pip install '.[development]'
+
+# 4. Run the test suite to verify setup
+python -m pytest
 ```
+
+You should see all 103 tests pass. If they do, you're ready for the labs.
+
+## No AWS Credentials Needed
+
+The python-utils codebase wraps AWS services (S3, KMS, Secrets Manager, etc.), but **all tests use mocks** — no AWS account or credentials are required. The `.[development]` install includes `pytest-mock`, `mock`, and `requests-mock` so everything runs locally.
+
+## What's in python-utils?
+
+```
+python-utils/
+├── src/nypl_py_utils/
+│   ├── classes/
+│   │   ├── s3_client.py           ← Labs 2 & 3 target this file
+│   │   ├── kms_client.py          ← Capstone targets this file
+│   │   ├── secrets_manager_client.py
+│   │   ├── kinesis_client.py
+│   │   └── ...                    (10+ client modules)
+│   └── functions/
+│       ├── log_helper.py
+│       ├── config_helper.py
+│       └── ...
+├── tests/
+│   ├── test_s3_client.py          ← Only 2 tests (good bridge to Lab 3)
+│   ├── test_kms_client.py
+│   └── ...                        (one test file per module)
+└── pyproject.toml
+```
+
+## How Labs Use This Codebase
+
+| Lab | File | Task |
+|---|---|---|
+| Lab 2: Feature Build Sprint | `s3_client.py` | Add new methods (list, CSV fetch, cache management) |
+| Lab 3: AI Test Suite | `test_s3_client.py` | Evaluate AI-generated tests for hallucinations |
+| Capstone | `kms_client.py` | Add encryption + secret rotation |
 
 ## Running Tests
 
 ```bash
-python -m pytest src/tests/ -v
+# Run all tests
+python -m pytest
+
+# Run tests for a specific module
+python -m pytest tests/test_s3_client.py -v
+
+# Run with verbose output
+python -m pytest -v
 ```
 
-## Design Principles
+## Troubleshooting
 
-This codebase is intentionally:
-- **Approachable**: Clean enough to understand quickly, but with room for improvement
-- **Realistic**: Resembles code participants encounter in real work
-- **Extensible**: Designed for participants to add features during labs
-- **Testable**: Structured to support meaningful test generation exercises
-
-## NYPL Sandbox Codebase (Pending)
-
-The sandbox codebase will be hosted in NYPL's GitHub organization (expected org name: `NYPLGA-training`). It is a fork of **python-utils**, which NYPL is setting up with Copilot licenses attached. Fork URL pending — expected from Mike Benowitz / Kimi.
-
-Once the fork URL is available:
-- Labs 2, 3, and the capstone will point to the NYPL fork
-- This directory will contain setup instructions, task definitions, and solution files that reference the fork
-- The fork needs to be audited against our workshop requirements (existing tests, simple setup, extensible)
-
-## TODO
-
-- [ ] Receive NYPL fork URL and update clone instructions
-- [ ] Audit python-utils fork (file count, test coverage, setup complexity)
-- [ ] Build tiered task definitions (base/intermediate/stretch)
-- [ ] Write solution files for labs
-- [ ] Update requirements.txt with dependencies
+| Problem | Solution |
+|---|---|
+| `ModuleNotFoundError: nypl_py_utils` | Make sure you ran `pip install '.[development]'` (not just `pip install .`) |
+| `pip install` fails on `psycopg` | This is a postgres driver — try `pip install '.[development]'` again, or install `libpq-dev` on Linux |
+| Tests fail with import errors | Ensure your virtual environment is activated (`source venv/bin/activate`) |
+| `python` not found | Try `python3` instead |
