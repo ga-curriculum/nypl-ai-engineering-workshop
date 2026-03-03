@@ -4,7 +4,7 @@
 
 | Detail | Info |
 |---|---|
-| **Duration** | 10:00 AM – 4:00 PM (5 hours instruction + 1 hour lunch) |
+| **Duration** | 10:00 AM – 5:00 PM ET (6 hours instruction + 1 hour lunch) |
 | **Audience** | 25 software engineers per session, 2–25 years experience |
 | **Sessions** | Cohort 1: March 18, 2026 (GA Campus, Flatiron NYC — hybrid-capable) |
 | | Cohort 2: March 24, 2026 (NYPL Trustee's Room, Bryant Park — NOT hybrid-capable) |
@@ -21,9 +21,8 @@
 | 1:00–2:00 | Lunch | 60 min | — |
 | 2:00–3:00 | Module 3: Testing and QA with AI | 60 min | Lecture + Lab 3 |
 | 3:00–3:30 | Module 4: Transparency and Governance | 30 min | Lecture + Lab 4 |
-| 3:30–4:00 | Wrap-up and Q&A | 30 min | Plenary |
-
-> **Note:** This pacing assumes 5 hours of instruction (10am–4pm with 1 hour lunch). If confirmed as 6 hours of instruction, the additional time can expand Module 4, add a capstone challenge, or provide longer lab sessions.
+| 3:30–4:15 | Capstone Challenge | 45 min | Hands-on sprint |
+| 4:15–5:00 | Capstone Debrief + Wrap-up and Q&A | 45 min | Plenary |
 
 ## Pre-Workshop Checklist
 
@@ -185,11 +184,14 @@ NYPL leadership (Garvita or team lead) may present their internal AI guidelines 
 | Segment | Time |
 |---|---|
 | Slides 1–5: Disclosure spectrum + practice | 10 min |
-| *(Optional) NYPL AI guidelines presentation* | *10–15 min* |
-| Slides 6–8: IP, governance, QA framework as governance | 10 min |
-| Slide 9: Quick poll (interactive) | 3 min |
+| Slides 6–8: IP, governance, QA framework as governance | 7 min |
+| Slides 9–10: NYPL's AI Principles + Working Guidelines | 5 min |
+| *(Optional) NYPL leadership presentation* | *10–15 min — adjust other segments if used* |
+| Slide 11: Quick poll (interactive) | 3 min |
 | Transition to Lab 4 | 2 min |
 | Lab 4: Code Review Tagging | 10 min |
+
+> **CONFIDENTIAL:** Slides 9–10 reference NYPL's internal AI guidelines. The full content is in `modules/module-4-transparency-governance/slides/nypl-ai-guidelines-CONFIDENTIAL.md`. Present from this document during the session but do not distribute it.
 
 **Key talking points:**
 - The disclosure spectrum: fully AI-generated > AI-assisted > AI-reviewed > human-only
@@ -197,9 +199,11 @@ NYPL leadership (Garvita or team lead) may present their internal AI guidelines 
 - License and IP considerations — evolving legal landscape
 - The QA Framework is itself a governance mechanism (built-in oversight)
 - 5 essentials for an org AI policy: tools, disclosure, review, data, accountability
+- **NYPL-specific:** Core objectives (Empower, Enhance, Advance), guiding principles, and the do's/don'ts from NYPL's Working Staff Guidelines
 
-**Interactive poll (Slide 9):**
+**Interactive poll (Slide 11):**
 - Ask by show of hands: "Does your team have an AI coding policy?"
+- "Were any of NYPL's guiding principles new to you?"
 - "Have you reviewed a PR that was AI-generated without knowing it?"
 - This usually sparks good discussion — let it run if energy is there
 

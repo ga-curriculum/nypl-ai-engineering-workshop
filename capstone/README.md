@@ -5,7 +5,7 @@
 | Detail | Info |
 |---|---|
 | **Duration** | 45 minutes |
-| **Position** | TBD — included if schedule allows 6 hours of instruction |
+| **Position** | 3:30–4:15 PM (debrief + wrap-up 4:15–5:00 PM) |
 | **Tools** | Google Gemini Code Assist + GitHub Copilot |
 | **QA Personas** | Security Auditor (primary) + Edge Case Hunter (secondary) |
 | **Target File** | `python-utils/src/nypl_py_utils/classes/kms_client.py` |

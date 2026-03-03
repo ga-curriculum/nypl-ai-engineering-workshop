@@ -21,6 +21,7 @@ A 6-hour in-person workshop for the New York Public Library, teaching software e
 | 2 | Working with Existing Codebases | 90 min |
 | 3 | Testing and QA with AI | 60 min |
 | 4 | Transparency and Governance | 30 min |
+| Capstone | Encryption Feature Sprint | 45 min |
 
 ## Labs
 
@@ -63,7 +64,7 @@ nypl-ai-engineering-workshop/
 
 ```bash
 # Clone the workshop repo
-git clone https://git.generalassemb.ly/modular-courses/nypl-ai-engineering-workshop.git
+git clone git@git.generalassemb.ly:modular-curriculum-all-courses/nypl-ai-engineering-workshop.git
 
 # Clone the sandbox codebase (separate repo, alongside the workshop repo)
 git clone https://github.com/NYPL-GA-Training/python-utils.git

@@ -131,17 +131,51 @@ If your team doesn't have one yet, here are the 5 essentials:
 
 ---
 
-## Slide 9: Quick Poll
+## Slide 9: NYPL's AI Principles — Your Organization's Framework
+
+> **Facilitator note:** Detailed content for this slide is in the confidential reference document: `nypl-ai-guidelines-CONFIDENTIAL.md`. Present the core objectives and guiding principles from that document. Do not distribute the reference doc outside of the workshop.
+
+NYPL has developed a comprehensive AI framework built on three **core objectives** and **11 guiding principles**.
+
+**Core Objectives:**
+1. Empower Through Education
+2. Enhance, Not Replace
+3. Advance Library-Centric Solutions
+
+**Guiding Principles** (present from confidential reference):
+- Human-First Approach, Accountability, Equity, Security, Privacy, Transparency, Accuracy, Ethical Conduct, Digital Literacy, Protecting IP Rights, Sustainability
+
+> Source: *Artificial Intelligence (AI) at NYPL: Principles & Working Staff Guidelines* (Updated September 16, 2025) — internal document, not for distribution.
+
+---
+
+## Slide 10: NYPL's Working Guidelines — Do's and Don'ts
+
+> **Facilitator note:** Present the Working Staff Guidelines from `nypl-ai-guidelines-CONFIDENTIAL.md`. Highlight the items most relevant to engineering workflows.
+
+**Key points to emphasize for this audience:**
+- Use only pre-approved AI systems (vetted by IT/Digital)
+- You are responsible for reviewing, revising, and fact-checking all AI-generated material
+- Label work outputs that were largely or fully AI-generated
+- Do not enter sensitive data (patron info, PII) into AI tools
+- Do not use unapproved AI systems for Library business
+
+**Key takeaway:** The engineer who commits the code owns it. NYPL's principles reinforce this — accountability rests with you, not the AI.
+
+---
+
+## Slide 11: Quick Poll
 
 (Interactive — show of hands or chat)
 
 1. Does your team currently have an AI coding policy? (Yes / No / Informal)
-2. Have you ever reviewed a PR that was AI-generated without knowing it?
-3. Would you feel comfortable telling your team lead that a critical function was AI-generated?
+2. Were any of NYPL's guiding principles new to you?
+3. Have you ever reviewed a PR that was AI-generated without knowing it?
+4. Would you feel comfortable telling your team lead that a critical function was AI-generated?
 
 ---
 
-## Slide 10: Lab 4 Preview
+## Slide 12: Lab 4 Preview
 
 **Lab 4: Code Review and Tagging** (10 minutes)
 
@@ -156,7 +190,7 @@ See `labs/lab-4-code-review-tagging/` for instructions.
 
 ---
 
-## Slide 11: Recap
+## Slide 13: Recap
 
 What we covered:
 1. The disclosure spectrum: fully AI-generated → human-only
@@ -164,7 +198,10 @@ What we covered:
 3. IP and licensing awareness
 4. The QA Framework doubles as a governance mechanism
 5. Five essentials for an organizational AI policy
+6. NYPL's AI Principles and Working Staff Guidelines — your organization's real framework
 
 **The engineer who commits the code owns it. AI is the tool, you're the author.**
+
+**NYPL's principles make this concrete: accountability, transparency, and a human-first approach.**
 
 **Up next:** Lab 4 — then the Capstone Challenge.
