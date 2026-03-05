@@ -230,11 +230,11 @@ Updated March 1 to reflect all resolved blockers. Readiness score now 95%.
 ### ~~3. Participant Handout References Stale Paths~~ — FIXED
 Updated to show two-repo structure (workshop + python-utils).
 
-### 4. Module 3 Has No Exercises Directory Content
-`modules/module-3-testing-qa/exercises/` is empty (just `.gitkeep`). This is intentional — Lab 3 serves as the exercise — but a reviewer unfamiliar with the design might flag it.
+### ~~4. Module 3 Has No Exercises Directory Content~~ — FIXED
+Added `exercises/README.md` explaining that Lab 3 serves as the exercise for this module.
 
-### 5. Schedule Confirmation Pending
-The facilitator guide assumes 5 hours of instruction (10am-4pm with 1hr lunch). If confirmed as 6 hours, the capstone fits into the agenda. Current capstone materials are written and ready but not scheduled.
+### ~~5. Schedule Confirmation~~ — RESOLVED
+The schedule is 10 AM – 5 PM (6 hours instruction + 1 hour lunch). The capstone is included in the agenda at 3:30–4:15 PM with debrief and wrap-up from 4:15–5:00 PM.
 
 ---
 

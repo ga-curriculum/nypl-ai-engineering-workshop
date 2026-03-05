@@ -8,7 +8,7 @@ A 6-hour in-person workshop for the New York Public Library, teaching software e
 |---|---|
 | **Client** | New York Public Library (NYPL) |
 | **Audience** | 25 software engineers per session (SE, QA, DevOps) — 2 to 25 years experience |
-| **Duration** | 6 hours, in-person with devices |
+| **Duration** | 10 AM – 5 PM (6 hours instruction + 1 hour lunch), in-person with devices |
 | **Delivery Dates** | March 18, 2026 (Cohort 1) and March 24, 2026 (Cohort 2) |
 | **Tools** | Google Gemini Code Assist + GitHub Copilot (dual-tool framework) |
 | **Language** | Python |

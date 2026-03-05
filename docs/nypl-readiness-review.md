@@ -88,13 +88,13 @@ Module 2 is the most abstract module. While Modules 1 and 3 have concrete Python
 
 | Exercise | Answer Key? | Risk |
 |---|---|---|
-| Module 1, Exercise 1 (High-Context Prompt) | No | Facilitators must evaluate prompt quality subjectively |
+| Module 1, Exercise 1 (High-Context Prompt) | Yes (added to facilitator guide) | 4-criteria rubric for evaluating prompt quality |
 | Module 1, Exercise 2 (Peer Testing) | No | Social exercise — no rubric needed (low risk) |
 | Module 2, Exercise 1 (Task Decomposition) | Yes | Good coverage |
 | Module 4, Exercise 1 (Disclosure Practice) | No | Open-ended scenarios with no model answers |
 | Module 4, Exercise 2 (Policy Draft) | No | Group activity — no single answer (medium risk) |
 
-**Action:** Create a brief facilitator rubric for Module 1 Exercise 1 (what makes a "good" high-context prompt — 3-4 criteria). For Module 4, add sample discussion points rather than a strict answer key.
+**Status:** Module 1 Exercise 1 rubric has been added to the facilitator guide (4 criteria for evaluating prompt quality). Module 4 exercises remain open-ended by design — facilitators can use the slide content as discussion reference.
 
 ---
 
@@ -103,10 +103,8 @@ Module 2 is the most abstract module. While Modules 1 and 3 have concrete Python
 ### ~~1. Path Error in Environment Setup~~ — FIXED
 `docs/environment-setup.md` now points to python-utils clone with `pip install '.[development]'` and `python -m pytest`.
 
-### 2. Schedule Duration Uncertainty
-The facilitator guide notes: "If confirmed as 6 hours of instruction, the additional time can expand Module 4, add a capstone challenge, or provide longer lab sessions." This has not been resolved. The current schedule assumes 5 hours.
-
-**Action:** Confirm with NYPL whether the schedule is 5 or 6 hours of instruction. If 6, allocate the extra hour to either an expanded capstone (recommended) or longer lab sessions.
+### ~~2. Schedule Duration Uncertainty~~ — RESOLVED
+The schedule is confirmed as 10 AM – 5 PM (6 hours instruction + 1 hour lunch). The capstone challenge (3:30–4:15 PM) and debrief/wrap-up (4:15–5:00 PM) are included in the agenda.
 
 ### 3. Survey Link TBD
 The facilitator guide references a post-workshop survey but no link exists. Needs to be designed and tested before March 18.
@@ -114,8 +112,8 @@ The facilitator guide references a post-workshop survey but no link exists. Need
 ### 4. Timeline Document is Stale
 `docs/timeline.md` assumes February 18 as the start date. Several Week 1 items marked "Not Started" are now either done or blocked. Should be updated to reflect reality.
 
-### 5. Module 3 Exercises Directory is Empty
-The `modules/module-3-testing-qa/exercises/` directory contains only `.gitkeep`. This is intentional (testing practice is embedded in Lab 3), but a facilitator unfamiliar with the design might think content is missing. Consider adding a brief `README.md` noting that Lab 3 serves as the exercise.
+### ~~5. Module 3 Exercises Directory is Empty~~ — FIXED
+Added `exercises/README.md` explaining that Lab 3 serves as the exercise for this module.
 
 ---
 
@@ -144,8 +142,8 @@ The `modules/module-3-testing-qa/exercises/` directory contains only `.gitkeep`.
 - [x] ~~Write Lab 2 feature spec and solution~~ — Complete (S3Client extensions, 3 tiers)
 - [x] ~~Write Lab 3 solution~~ — Complete (hallucination answer key)
 - [x] ~~Write capstone challenge brief~~ — Complete (KMS encrypt + secret rotation)
-- [ ] Confirm 5 vs. 6 hour schedule with NYPL
-- [ ] Create facilitator rubric for Module 1 Exercise 1
+- [x] ~~Confirm 5 vs. 6 hour schedule with NYPL~~ — Confirmed: 6 hours instruction + 1 hour lunch (10 AM – 5 PM)
+- [x] ~~Create facilitator rubric for Module 1 Exercise 1~~ — Added to facilitator guide
 - [ ] Design post-workshop survey
 - [ ] Update `docs/timeline.md` to reflect current reality
 - [ ] SME review (see `docs/sme-review-guide.md`)

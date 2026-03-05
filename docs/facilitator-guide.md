@@ -75,6 +75,16 @@
 - Copilot: Type a descriptive comment and let it autocomplete the function — point out the speed
 - Point out: Gemini Code Assist gave you depth and reasoning, Copilot gave you code fast — use both
 
+**Exercise 1 rubric (High-Context Prompt):**
+- A strong high-context prompt includes all four elements from the instructions:
+  1. **Specific function name** — e.g., `filter_users_by_criteria` (not just `process data`)
+  2. **Clear input/output types** — e.g., `List[dict]` in, `List[dict]` out, with field names specified
+  3. **Edge cases** — at least 2, e.g., empty list, missing keys, invalid criteria values
+  4. **Style requirements** — type hints, docstrings, error handling approach
+- Common gaps to watch for: prompts that specify *what* but not *how to handle failures*
+- Good sign: participant's refined prompt (Step 3) is noticeably more specific than their first attempt
+- During the Copilot comparison (Step 4), look for observations about inline completion vs. chat-style differences — this reinforces the dual-tool framework
+
 **Exercise 3 answer key:**
 - The sample code (`load_config`, `get_users`, `calculate_average_rating`) contains:
   - SQL injection via f-string (Security finds this)
