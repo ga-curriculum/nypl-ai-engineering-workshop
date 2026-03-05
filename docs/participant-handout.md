@@ -11,7 +11,8 @@ Welcome to the AI-Assisted Software Engineering workshop. Today you'll learn to 
 | 1:00–2:00 | Lunch |
 | 2:00–3:00 | Module 3: Testing and QA with AI |
 | 3:00–3:30 | Module 4: Transparency and Governance |
-| 3:30–4:00 | Wrap-up |
+| 3:30–4:15 | Capstone Challenge |
+| 4:15–5:00 | Capstone Debrief + Wrap-up and Q&A |
 
 ## Tools You'll Use
 
