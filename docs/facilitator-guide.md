@@ -98,7 +98,7 @@
 - The starter code (`inventory_manager.py`) has 16 intentional issues across 5 categories
 - Circulate during the lab. Common sticking points: Gemini Code Assist extension sign-in, Copilot not activating in VS Code
 - Remind participants to try all three difficulty tiers (base/intermediate/stretch)
-- Time check: allow 30 min for the lab portion
+- Time check: 15 min is realistic for the base tier; allow the full 30 min for participants attempting intermediate or stretch work
 - Answer key is in `labs/lab-1-code-analysis/solution/issues-found.md`
 
 ### Module 2: Working with Existing Codebases (90 min)
@@ -171,6 +171,7 @@
 - Walk through each test — first 3 are good, tests 4 and 5 are hallucinated
 - Test 4 (sorts by name): the function doesn't sort — this might pass by coincidence with certain input order
 - Test 5 (excludes deleted users): the function doesn't check the 'deleted' field
+- Call out explicitly that this is a warm-up demo, not the Lab 3 exercise itself
 - Ask the room: "Would you have caught these in a code review?" — this is the memorable moment
 
 **Lab 3 notes:**
@@ -181,6 +182,7 @@
 - Hallucination types: assumed retry logic (Test 4), assumed JSON error handling (Test 7), invented gzip compression (Test 9)
 - Answer key: `labs/lab-3-ai-test-suite/solution/hallucination-answers.md`
 - The Test Coverage Analyst persona is the review checklist for this lab
+- After the debrief, have participants remove `tests/test_s3_client_review.py` (or reset their sandbox) so the intentional failures do not pollute later test runs
 - Remind participants: "If all tests pass, am I confident the code works correctly?"
 
 ### Module 4: Transparency and Governance (30 min)

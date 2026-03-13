@@ -167,6 +167,8 @@ def test_excludes_deleted_users():
 
 **Tests 4 and 5 are hallucinated.** They assert behavior the function doesn't have. Test 4 might even pass by coincidence depending on input order.
 
+**Important:** This 5-test `get_active_users` demo is separate from the Lab 3 `s3_client.py` exercise, which uses a different test file with 10 tests total.
+
 *Ask the room: "Would you have caught these in a code review?"*
 
 ---
@@ -205,7 +207,7 @@ The workshop loop applies directly to testing:
 You'll evaluate AI-generated tests for the original `s3_client.py` and learn to spot hallucinated assertions. (You do *not* need to have finished Lab 2.)
 
 Three tiers:
-- **Base:** Generate tests with Copilot, apply Test Coverage Analyst persona, find at least 1 hallucinated test
+- **Base:** Copy the provided test file, review it against `s3_client.py`, and identify the 3 hallucinated tests
 - **Intermediate:** Use Gemini Code Assist to find coverage gaps, write tests for 3 gaps, check for tautologies
 - **Stretch:** Compare Copilot vs. Gemini Code Assist test generation, create a test quality scorecard
 

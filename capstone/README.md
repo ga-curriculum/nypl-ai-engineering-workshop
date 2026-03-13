@@ -41,6 +41,8 @@ See [`starter/challenge-brief.md`](starter/challenge-brief.md) for the full spec
 | **Intermediate** | Add input validation + 5 tests + 2 QA persona reviews |
 | **Stretch** | Create `rotate_secret()` integrating `KmsClient` + `SecretsManagerClient` |
 
+**Facilitator note:** The stretch tier is intentionally ambitious for a 45-minute sprint. Participants do not need to finish the full stretch scope to succeed in the capstone.
+
 ## Evaluation Rubric
 
 See [rubric.md](rubric.md) for detailed scoring criteria.

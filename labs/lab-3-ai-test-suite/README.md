@@ -76,6 +76,10 @@ This lab targets the **original** `s3_client.py` in python-utils — the version
 python -m pytest tests/test_s3_client_review.py -v
 ```
 
+## Cleanup
+
+The copied review file is intentionally designed to fail 3 tests. After the exercise, remove `python-utils/tests/test_s3_client_review.py` (or revert your sandbox) before running the full `python-utils` test suite again.
+
 ## Review Step
 
 Apply the Test Coverage Analyst checklist in [`review/review-checklist.md`](review/review-checklist.md). The key question: "If all tests pass, am I confident the code works correctly?"

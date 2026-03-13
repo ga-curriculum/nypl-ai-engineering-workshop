@@ -4,7 +4,7 @@
 
 | Detail | Info |
 |---|---|
-| **Duration** | 90 minutes (60 min lecture + 30 min Lab 2) |
+| **Duration** | 90 minutes (55 min instruction/debrief + 35 min Lab 2) |
 | **Position** | 11:30 AM–1:00 PM |
 | **Tools** | Google Gemini Code Assist + GitHub Copilot |
 | **Lab** | Lab 2: Feature Build Sprint |

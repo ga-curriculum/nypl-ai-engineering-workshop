@@ -24,6 +24,8 @@ Your challenge is to extend the KMS client with encryption capabilities and buil
 | Test | 10 min | Generate and review tests |
 | Review | 10 min | Apply QA personas |
 
+> **Expectation setting:** The stretch tier is designed to be challenging within 45 minutes. Full stretch completion is not expected; partial progress with sound reasoning is still a successful outcome.
+
 ---
 
 ## Base Tier

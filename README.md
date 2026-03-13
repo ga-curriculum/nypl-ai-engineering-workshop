@@ -29,7 +29,7 @@ A 6-hour in-person workshop for the New York Public Library, teaching software e
 |---|---|---|
 | 1 | Code Analysis | Module 1 |
 | 2 | Feature Build Sprint | Module 2 |
-| 3 | AI Test Suite | Lab 2 output |
+| 3 | AI Test Suite | Module 3 (uses original `s3_client.py`) |
 | 4 | Code Review and Tagging | Module 4 |
 
 ## QA Refinement Framework
