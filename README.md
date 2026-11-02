@@ -64,7 +64,7 @@ nypl-ai-engineering-workshop/
 
 ```bash
 # Clone the workshop repo
-git clone git@git.generalassemb.ly:modular-curriculum-all-courses/nypl-ai-engineering-workshop.git
+git clone https://github.com/ga-curriculum/nypl-ai-engineering-workshop.git
 
 # Clone the sandbox codebase (separate repo, alongside the workshop repo)
 git clone https://github.com/NYPL-GA-Training/python-utils.git
