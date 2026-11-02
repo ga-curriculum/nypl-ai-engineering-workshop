@@ -80,7 +80,7 @@ Review the following in order:
 
 Participants must complete the environment setup **before** the workshop (allow 20–30 min):
 
-1. Clone the workshop repo from `git.generalassemb.ly`
+1. Clone the workshop repo from `github.com`
 2. Clone `NYPL-GA-Training/python-utils` from GitHub
 3. Set up Python virtual environment and install dependencies
 4. Install and verify GitHub Copilot extension in VS Code
@@ -93,7 +93,7 @@ Full instructions: `docs/environment-setup.md`
 
 ```bash
 # Clone the workshop repo
-git clone git@git.generalassemb.ly:modular-curriculum-all-courses/nypl-ai-engineering-workshop.git
+git clone https://github.com/ga-curriculum/nypl-ai-engineering-workshop.git
 
 # Clone the sandbox codebase (separate repo)
 git clone https://github.com/NYPL-GA-Training/python-utils.git
@@ -186,7 +186,7 @@ Review the Pacing Guide to confirm timing for your delivery. The current pacing 
 
 | Resource | Location |
 |---|---|
-| Workshop Repository | `git.generalassemb.ly/modular-curriculum-all-courses/nypl-ai-engineering-workshop` |
+| Workshop Repository | `../` |
 | Sandbox Codebase | `github.com/NYPL-GA-Training/python-utils` |
 | Facilitator Guide | `docs/facilitator-guide.md` |
 | Participant Handout | `docs/participant-handout.md` |

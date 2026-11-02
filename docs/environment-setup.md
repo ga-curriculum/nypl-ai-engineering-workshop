@@ -12,7 +12,7 @@ Complete these steps **before** the workshop. Allow 20–30 minutes.
 ## Step 1: Clone the Repository
 
 ```bash
-git clone https://git.generalassemb.ly/modular-courses/nypl-ai-engineering-workshop.git
+git clone https://github.com/ga-curriculum/nypl-ai-engineering-workshop.git
 cd nypl-ai-engineering-workshop
 ```
 

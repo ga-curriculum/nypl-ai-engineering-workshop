@@ -10,7 +10,7 @@ Before starting, you need:
 - [ ] **Claude Code CLI** installed (`npm install -g @anthropic-ai/claude-code` or via your preferred method)
 - [ ] **GitHub CLI** (`gh`) installed (`brew install gh`)
 - [ ] **Git** installed and configured
-- [ ] `gh` authenticated to the target GitHub host (e.g., `gh auth login --hostname git.generalassemb.ly`)
+- [ ] `gh` authenticated to the target GitHub host (e.g., `gh auth login`)
 - [ ] A **briefing document** with: client name, audience, tools, modules, timeline, and what to carry over from source repos
 
 ## Phase 1: Setup and Auth (10 min)
@@ -20,13 +20,13 @@ Before starting, you need:
 brew install gh
 ```
 
-### 1.2 Authenticate to GitHub Enterprise
+### 1.2 Authenticate to GitHub
 ```
-gh auth login --hostname git.generalassemb.ly
+gh auth login
 ```
 Choose HTTPS and browser login. Verify with:
 ```
-gh auth status --hostname git.generalassemb.ly
+gh auth status
 ```
 
 ### 1.3 Clone source repo(s)
