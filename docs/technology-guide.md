@@ -62,7 +62,7 @@ You'll work with **two repos** — the workshop curriculum and NYPL's Python cod
 
 ```bash
 # Clone the workshop repo (instructions, labs, exercises)
-git clone git@git.generalassemb.ly:modular-curriculum-all-courses/nypl-ai-engineering-workshop.git
+git clone https://github.com/ga-curriculum/nypl-ai-engineering-workshop.git
 
 # Clone the sandbox codebase (the Python code you'll work with in labs)
 git clone https://github.com/NYPL-GA-Training/python-utils.git
@@ -185,7 +185,7 @@ If any step fails, see Troubleshooting below.
 | Problem | Solution |
 |---|---|
 | VS Code can't find Python interpreter | Open Command Palette (`Cmd+Shift+P`) > "Python: Select Interpreter" > choose the one from your `venv`. |
-| Git clone fails | Check your SSH keys are set up for git.generalassemb.ly. For python-utils (HTTPS), no credentials needed. |
+| Git clone fails | Check your SSH keys are set up for github.com. For python-utils (HTTPS), no credentials needed. |
 | WiFi issues during workshop | Copilot inline suggestions may work briefly offline. For extended outages, pair with a neighbor who has connectivity. The facilitator has a USB backup with the repo and dependencies. |
 
 ---

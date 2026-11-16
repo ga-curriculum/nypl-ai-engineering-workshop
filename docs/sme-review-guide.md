@@ -15,7 +15,7 @@
 
 ```bash
 # Clone the workshop repo
-git clone https://git.generalassemb.ly/modular-courses/nypl-ai-engineering-workshop.git
+git clone https://github.com/ga-curriculum/nypl-ai-engineering-workshop.git
 cd nypl-ai-engineering-workshop
 
 # Clone the sandbox codebase (separate repo, alongside the workshop repo)

@@ -10,7 +10,7 @@
 - [x] Populate README, CONTRIBUTING, docs/
 - [x] Scaffold QA framework with all personas and templates
 - [x] Set up sandbox directory structure
-- [ ] Push to git.generalassemb.ly/modular-courses
+- [ ] Push to github.com/ga-curriculum
 - [ ] Configure branch protection
 
 ### Feb 19
